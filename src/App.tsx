@@ -29,7 +29,7 @@ const HeroSection = () => (
       </div>
     </div>
     <div className="hero-image">
-      <img src="/image-1.jpg" alt="AI Dental Solutions" className="feature-image" />
+      <img src="public/image-1.png" alt="AI Dental Solutions" className="feature-image" />
     </div>
   </section>
 );
@@ -84,7 +84,7 @@ const Footer = () => (
     <div className="footer-content">
       <div className="footer-company">
         <div className="footer-logo">
-          <img src="/logo-1.png" alt="Scheduly AI" className="logo-image" />
+          <img src="public/logo-1.png" alt="Scheduly AI" className="logo-image" />
         </div>
         <p className="company-description">
           Transforming dental practices with cutting-edge AI solutions for automation, 
