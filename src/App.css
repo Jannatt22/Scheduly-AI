@@ -82,6 +82,12 @@ body {
   margin-bottom: 2rem;
 }
 
+.contact-section h3 {
+  color: #1a365d;
+  margin: 2rem 0 1.5rem;
+  font-size: 1.5rem;
+}
+
 .demo-button {
   background: #2d5a9e;
   color: white;
@@ -102,14 +108,36 @@ body {
   margin-top: 2rem;
 }
 
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-emails, .contact-phones {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .contact-info a {
   color: #2d5a9e;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .contact-info a:hover {
+  color: #1a365d;
   text-decoration: underline;
+}
+
+.contact-address {
+  font-style: normal;
+  color: #666;
+  line-height: 1.6;
 }
 
 /* Responsive adjustments */
@@ -124,5 +152,9 @@ body {
   
   .product-section {
     margin: 1rem;
+  }
+
+  .contact-details {
+    padding: 0 1rem;
   }
 }
