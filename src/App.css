@@ -324,6 +324,7 @@ body {
 .footer-contact h3 {
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
+  color: var(--white);
 }
 
 .contact-details {
@@ -332,26 +333,35 @@ body {
   gap: 1.5rem;
 }
 
-.contact-emails, .contact-phones {
+.contact-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contact-icon {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  min-width: 24px;
+}
+
+.contact-info {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.contact-details a {
+.contact-info a,
+.contact-info address {
   color: #9CA3AF;
   text-decoration: none;
   transition: color 0.3s ease;
-}
-
-.contact-details a:hover {
-  color: var(--white);
-}
-
-.contact-address {
   font-style: normal;
-  color: #9CA3AF;
-  line-height: 1.6;
+  line-height: 1.5;
+}
+
+.contact-info a:hover {
+  color: var(--white);
 }
 
 .footer-bottom {

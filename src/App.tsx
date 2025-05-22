@@ -94,18 +94,27 @@ const Footer = () => (
       <div className="footer-contact">
         <h3>Contact Us</h3>
         <div className="contact-details">
-          <div className="contact-emails">
-            <a href="mailto:siva@effibotic.com">siva@effibotic.com</a>
-            <a href="mailto:rupendra@effibotic.com">rupendra@effibotic.com</a>
+          <div className="contact-group">
+            <span className="contact-icon">✉️</span>
+            <div className="contact-info">
+              <a href="mailto:siva@effibotic.com">siva@effibotic.com</a>
+              <a href="mailto:rupendra@effibotic.com">rupendra@effibotic.com</a>
+            </div>
           </div>
-          <div className="contact-phones">
-            <a href="tel:+16477242624">+1 (647) 724-2624</a>
-            <a href="tel:+12899860990">+1 (289) 986-0990</a>
+          <div className="contact-group">
+            <span className="contact-icon">📞</span>
+            <div className="contact-info">
+              <a href="tel:+16477242624">+1 (647) 724-2624</a>
+              <a href="tel:+12899860990">+1 (289) 986-0990</a>
+            </div>
           </div>
-          <address className="contact-address">
-            8 Nelson St W,<br />
-            Brampton, ON L6X 1B7
-          </address>
+          <div className="contact-group">
+            <span className="contact-icon">📍</span>
+            <address className="contact-info">
+              8 Nelson St W,<br />
+              Brampton, ON L6X 1B7
+            </address>
+          </div>
         </div>
       </div>
     </div>
