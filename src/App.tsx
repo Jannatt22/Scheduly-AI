@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
+import logo from './images/logo-1.png';
+import heroImage from './images/image-1.jpg';
 
 const Navigation = () => (
   <nav className="nav-header">
     <div className="nav-container">
       <div className="logo">
-        <img src="/logo-1.png" alt="Scheduly AI" className="logo-image" />
+        <img src={logo} alt="Scheduly AI" className="logo-image" />
       </div>
       <div className="nav-links">
         <a href="#home">Home</a>
@@ -29,7 +31,7 @@ const HeroSection = () => (
       </div>
     </div>
     <div className="hero-image">
-      <img src="/image-1.jpg" alt="AI Dental Solutions" className="feature-image" />
+      <img src={heroImage} alt="AI Dental Solutions" className="feature-image" />
     </div>
   </section>
 );
@@ -84,7 +86,7 @@ const Footer = () => (
     <div className="footer-content">
       <div className="footer-company">
         <div className="footer-logo">
-          <img src="/logo-1.png" alt="Scheduly AI" className="logo-image" />
+          <img src={logo} alt="Scheduly AI" className="logo-image" />
         </div>
         <p className="company-description">
           Transforming dental practices with cutting-edge AI solutions for automation, 
