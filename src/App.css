@@ -41,7 +41,7 @@ body {
 }
 
 .logo {
-  height: 40px;
+  height: 60px;
   display: flex;
   align-items: center;
 }
@@ -110,7 +110,7 @@ body {
 
 .hero-image {
   flex: 1;
-  max-width: 500px;
+  max-width: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -299,7 +299,7 @@ body {
 }
 
 .footer-logo {
-  height: 40px;
+  height: 60px;
   margin-bottom: 1.5rem;
 }
 
@@ -408,11 +408,11 @@ body {
   }
 
   .logo {
-    height: 32px;
+    height: 45px;
   }
 
   .footer-logo {
-    height: 32px;
+    height: 45px;
   }
 
   .products-grid {
