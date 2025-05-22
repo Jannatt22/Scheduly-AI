@@ -4,7 +4,9 @@ import './App.css';
 const Navigation = () => (
   <nav className="nav-header">
     <div className="nav-container">
-      <div className="logo">DentalAI</div>
+      <div className="logo">
+        <img src="/logo-1.png" alt="Scheduly AI" className="logo-image" />
+      </div>
       <div className="nav-links">
         <a href="#home">Home</a>
         <a href="#products">Products</a>
@@ -19,7 +21,7 @@ const Navigation = () => (
 const HeroSection = () => (
   <section className="hero-section" id="home">
     <div className="hero-content">
-      <h1>AI-Driven Tools Built for Dental Growth</h1>
+      <h1>Streamline claims, calls, and follow-ups with AI built for dental practices</h1>
       <p>Automate patient calls, claims, and streamline your dental practice operations.</p>
       <div className="hero-buttons">
         <button className="cta-button">Book a Demo</button>
@@ -27,8 +29,7 @@ const HeroSection = () => (
       </div>
     </div>
     <div className="hero-image">
-      {/* Placeholder for illustration */}
-      <div className="placeholder-image"></div>
+      <img src="/image-1.jpg" alt="AI Dental Solutions" className="feature-image" />
     </div>
   </section>
 );
@@ -82,7 +83,9 @@ const Footer = () => (
   <footer className="footer">
     <div className="footer-content">
       <div className="footer-company">
-        <div className="footer-logo">DentalAI</div>
+        <div className="footer-logo">
+          <img src="/logo-1.png" alt="Scheduly AI" className="logo-image" />
+        </div>
         <p className="company-description">
           Transforming dental practices with cutting-edge AI solutions for automation, 
           efficiency, and enhanced patient care.
@@ -107,7 +110,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="footer-bottom">
-      <p className="copyright">© 2024 DentalAI. All rights reserved.</p>
+      <p className="copyright">© 2024 Scheduly AI. All rights reserved.</p>
     </div>
   </footer>
 );
