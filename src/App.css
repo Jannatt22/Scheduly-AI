@@ -299,14 +299,14 @@ body {
 }
 
 .footer-logo {
-  height: 60px;
+  height: 100px;
   margin-bottom: 1.5rem;
 }
 
 .footer-logo .logo-image {
   height: 100%;
   width: auto;
-  object-fit: contain;
+  object-fit: cover;
   filter: brightness(0) invert(1); /* Makes the logo white */
 }
 
