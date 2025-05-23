@@ -300,14 +300,14 @@ body {
 
 .footer-logo {
   height: 100px;
+  width: auto;
   margin-bottom: 1.5rem;
 }
 
 .footer-logo .logo-image {
   height: 100%;
   width: auto;
-  object-fit: cover;
-  filter: brightness(0) invert(1); /* Makes the logo white */
+  object-fit: contain;
 }
 
 .company-description {
