@@ -5,7 +5,7 @@ const Navigation = () => (
   <nav className="nav-header">
     <div className="nav-container">
       <div className="logo">
-        <img src="/logo-1.png" alt="Scheduly AI" className="logo-image" />
+        <img src="/logo-1.jpg" alt="Scheduly AI" className="logo-image" />
       </div>
       <div className="nav-links">
         <a href="#home">Home</a>
@@ -48,14 +48,14 @@ const ProductsSection = () => (
     <h2>Our AI-Powered Dental Solutions</h2>
     <div className="products-grid">
       <ProductCard
-        title="PDF Claim Automation"
+        title=" Automated Claim Data Processing"
         description="Automatically extract and submit data from dental insurance PDFs. Reduce manual errors and speed up reimbursement workflows."
         icon="📄"
       />
       <ProductCard
-        title="Voice Agent Verification"
-        description="Automate verification calls with AI voice agents that confirm patient insurance details with accuracy and empathy."
-        icon="📞"
+        title="Insurance Verification"
+        description="Streamline insurance verification with AI-powered voice agents that confirm patient coverage details quickly, accurately, and within seconds."
+        icon="📋"
       />
       <ProductCard
         title="AI Receptionist"
@@ -63,10 +63,38 @@ const ProductsSection = () => (
         icon="🤖"
       />
       <ProductCard
-        title="Automated Recall Calls"
+        title="Automated Appointment Reminders"
         description="Boost patient retention with proactive, intelligent follow-up calls and appointment reminders."
         icon="🔁"
       />
+    </div>
+  </section>
+);
+
+const BenefitsSection = () => (
+  <section className="benefits-section" id="benefits">
+    <h2>Why Choose Scheduly AI</h2>
+    <div className="benefits-grid">
+      <div className="benefit-card">
+        <span className="benefit-icon">⚡</span>
+        <h3>Save Time</h3>
+        <p>Reduce administrative work by up to 70% with our AI automation tools</p>
+      </div>
+      <div className="benefit-card">
+        <span className="benefit-icon">💰</span>
+        <h3>Reduce Costs</h3>
+        <p>Cut operational expenses while improving efficiency and accuracy</p>
+      </div>
+      <div className="benefit-card">
+        <span className="benefit-icon">🎯</span>
+        <h3>Improve Accuracy</h3>
+        <p>Minimize human errors in claims processing and verifications</p>
+      </div>
+      <div className="benefit-card">
+        <span className="benefit-icon">😊</span>
+        <h3>Enhance Patient Experience</h3>
+        <p>Provide faster, more reliable service to your patients</p>
+      </div>
     </div>
   </section>
 );
@@ -84,7 +112,7 @@ const Footer = () => (
     <div className="footer-content">
       <div className="footer-company">
         <div className="footer-logo">
-          <img src="/logo-1.png" alt="Scheduly AI" className="logo-image" />
+          <img src="/logo-1.jpg" alt="Scheduly AI" className="logo-image" />
         </div>
         <p className="company-description">
           Transforming dental practices with cutting-edge AI solutions for automation, 
@@ -131,6 +159,7 @@ function App() {
       <main>
         <HeroSection />
         <ProductsSection />
+        <BenefitsSection />
         <DemoSection />
       </main>
       <Footer />
