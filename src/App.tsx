@@ -138,10 +138,16 @@ const Footer = () => (
           </div>
           <div className="contact-group">
             <span className="contact-icon">📍</span>
-            <address className="contact-info">
-              8 Nelson St W,<br />
-              Brampton, ON L6X 1B7
-            </address>
+            <div className="contact-info">
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=8+Nelson+St+W+Brampton+ON+L6X+1B7" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                8 Nelson St W,<br />
+                Brampton, ON L6X 1B7
+              </a>
+            </div>
           </div>
         </div>
       </div>
