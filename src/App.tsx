@@ -104,7 +104,7 @@ const ProductsSection = () => {
 
 const BenefitsSection = () => (
   <section className="benefits-section" id="benefits">
-    <h2>Why Choose Scheduly AI</h2>
+    <h2>Transform Your Practice</h2>
     <div className="benefits-grid">
       <div className="benefit-card">
         <span className="benefit-icon">⚡</span>
