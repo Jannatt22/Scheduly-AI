@@ -212,7 +212,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   flex-direction: row;
 }
 
@@ -239,7 +239,7 @@ body {
 }
 
 .product-cta {
-  margin-top: 1rem;
+  margin-top: 0;
   padding: 0.5rem 1rem;
   background: transparent;
   border: 1px solid var(--primary);
