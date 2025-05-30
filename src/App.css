@@ -82,13 +82,13 @@ body {
 /* Hero Section */
 .hero-section {
   background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%);
-  padding: 6rem 2rem;
+  padding: 8rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 4rem;
+  gap: 5rem;
 }
 
 .hero-content {
@@ -154,68 +154,99 @@ body {
 
 /* Products Section */
 .products-section {
-  padding: 6rem 2rem;
+  padding: 8rem 2rem;
   background: var(--white);
 }
 
 .products-section h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   color: var(--text-main);
 }
 
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 3rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .product-card {
   background: var(--bg-light);
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: popUp 0.6s ease forwards;
 }
 
+@keyframes popUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add delay for each card */
+.product-card:nth-child(1) { animation-delay: 0.1s; }
+.product-card:nth-child(2) { animation-delay: 0.2s; }
+.product-card:nth-child(3) { animation-delay: 0.3s; }
+.product-card:nth-child(4) { animation-delay: 0.4s; }
+
 .product-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .product-icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .product-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--text-main);
+  line-height: 1.4;
+}
+
+.product-card p {
+  color: #4B5563;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 .product-cta {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
   background: transparent;
-  border: 1px solid var(--primary);
+  border: 2px solid var(--primary);
   color: var(--primary);
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .product-cta:hover {
   background: var(--primary);
   color: var(--white);
+  transform: translateY(-2px);
 }
 
 /* Demo Section */
 .demo-section {
   background: linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%);
-  padding: 6rem 2rem;
+  padding: 8rem 2rem;
   text-align: center;
 }
 
@@ -283,7 +314,7 @@ body {
 .footer {
   background: var(--bg-dark);
   color: var(--white);
-  padding: 4rem 2rem 2rem;
+  padding: 6rem 2rem 2rem;
 }
 
 .footer-content {
@@ -291,7 +322,8 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 5rem;
+  margin-bottom: 4rem;
 }
 
 .footer-company {
@@ -417,9 +449,20 @@ body {
     height: 45px;
   }
 
-  .products-grid {
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
+  .products-section,
+  .benefits-section,
+  .hero-section,
+  .demo-section {
+    padding: 4rem 1rem;
+  }
+
+  .products-grid,
+  .benefits-grid {
+    gap: 2rem;
+  }
+
+  .product-card {
+    padding: 2rem;
   }
 
   .footer-content {
@@ -434,7 +477,7 @@ body {
 
 /* Benefits Section */
 .benefits-section {
-  padding: 6rem 2rem;
+  padding: 8rem 2rem;
   background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
 }
 
@@ -448,14 +491,15 @@ body {
 .benefits-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 3rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .benefit-card {
   background: var(--white);
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 1rem;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -481,16 +525,4 @@ body {
 .benefit-card p {
   color: #6B7280;
   line-height: 1.6;
-}
-
-/* Update responsive styles */
-@media (max-width: 768px) {
-  .benefits-grid {
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
-  }
-  
-  .benefit-card {
-    margin: 0 1rem;
-  }
 }
