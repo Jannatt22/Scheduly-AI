@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './App.css';
 
 const Navigation = () => (
@@ -43,33 +43,61 @@ const ProductCard = ({ title, description, icon }: { title: string; description:
   </div>
 );
 
-const ProductsSection = () => (
-  <section className="products-section" id="products">
-    <h2>Our AI-Powered Dental Solutions</h2>
-    <div className="products-grid">
-      <ProductCard
-        title=" Automated Claim Data Processing"
-        description="Automatically extract and submit data from dental insurance PDFs. Reduce manual errors and speed up reimbursement workflows."
-        icon="📄"
-      />
-      <ProductCard
-        title="Insurance Verification"
-        description="Streamline insurance verification with AI-powered voice agents that confirm patient coverage details quickly, accurately, and within seconds."
-        icon="📋"
-      />
-      <ProductCard
-        title="AI Receptionist"
-        description="Handle incoming calls, FAQs, and scheduling 24/7 with our intelligent virtual front desk."
-        icon="🤖"
-      />
-      <ProductCard
-        title="Automated Appointment Reminders"
-        description="Boost patient retention with proactive, intelligent follow-up calls and appointment reminders."
-        icon="🔁"
-      />
-    </div>
-  </section>
-);
+const ProductsSection = () => {
+  const productsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const currentRef = productsRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
+
+  return (
+    <section className="products-section" id="products">
+      <h2>Our AI-Powered Dental Solutions</h2>
+      <div className="products-grid" ref={productsRef}>
+        <ProductCard
+          title=" Automated Claim Data Processing"
+          description="Automatically extract and submit data from dental insurance PDFs. Reduce manual errors and speed up reimbursement workflows."
+          icon="📄"
+        />
+        <ProductCard
+          title="Insurance Verification"
+          description="Streamline insurance verification with AI-powered voice agents that confirm patient coverage details quickly, accurately, and within seconds."
+          icon="📋"
+        />
+        <ProductCard
+          title="AI Receptionist"
+          description="Handle incoming calls, FAQs, and scheduling 24/7 with our intelligent virtual front desk."
+          icon="🤖"
+        />
+        <ProductCard
+          title="Automated Appointment Reminders"
+          description="Boost patient retention with proactive, intelligent follow-up calls and appointment reminders."
+          icon="🔁"
+        />
+      </div>
+    </section>
+  );
+};
 
 const BenefitsSection = () => (
   <section className="benefits-section" id="benefits">
