@@ -36,8 +36,10 @@ const HeroSection = () => (
 
 const ProductCard = ({ title, description, icon }: { title: string; description: string; icon: string }) => (
   <div className="product-card">
-    <div className="product-icon">{icon}</div>
-    <h3>{title}</h3>
+    <div className="product-header">
+      <div className="product-icon">{icon}</div>
+      <h3>{title}</h3>
+    </div>
     <p>{description}</p>
     <button className="product-cta">Learn More</button>
   </div>
