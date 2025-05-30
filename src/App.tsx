@@ -22,7 +22,8 @@ const HeroSection = () => (
   <section className="hero-section" id="home">
     <div className="hero-content">
       <h1>Streamline claims, calls, and follow-ups with AI built for dental practices</h1>
-      <p>Automate patient calls, claims, and streamline your dental practice operations.</p>
+      <p>Automate patient communication, insurance claims, and administrative follow-ups to save time, reduce errors, and improve your team's efficiency.
+        Empower your staff to focus on patient care while AI handles the repetitive tasks.</p>
       <div className="hero-buttons">
         <button className="cta-button">Book a Demo</button>
         <a href="#products" className="secondary-button">Learn More</a>
