@@ -13,7 +13,7 @@ const Navigation = () => (
         <a href="#demo">Book a Demo</a>
         <a href="#contact">Contact</a>
       </div>
-      <button className="cta-button">Book a Demo</button>
+      <a href="https://calendly.com/siva-effibotic/30min?month=2025-06" target="_blank" rel="noopener noreferrer" className="cta-button">Book a Demo</a>
     </div>
   </nav>
 );
@@ -25,7 +25,7 @@ const HeroSection = () => (
       <p>Automate patient communication, insurance claims, and administrative follow-ups to save time, reduce errors, and improve your team's efficiency.
         Empower your staff to focus on patient care while AI handles the repetitive tasks.</p>
       <div className="hero-buttons">
-        <button className="cta-button">Book a Demo</button>
+        <a href="https://calendly.com/siva-effibotic/30min?month=2025-06" target="_blank" rel="noopener noreferrer" className="cta-button">Book a Demo</a>
         <a href="#products" className="secondary-button">Learn More</a>
       </div>
     </div>
@@ -134,7 +134,7 @@ const DemoSection = () => (
   <section className="demo-section" id="demo">
     <h2>See It In Action</h2>
     <p>Schedule a live walkthrough with our AI specialists.</p>
-    <button className="cta-button">Book a Demo</button>
+    <a href="https://calendly.com/siva-effibotic/30min?month=2025-06" target="_blank" rel="noopener noreferrer" className="cta-button">Book a Demo</a>
   </section>
 );
 
@@ -184,7 +184,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="footer-bottom">
-      <p className="copyright">© 2024 Scheduly AI. All rights reserved.</p>
+      <p className="copyright">© {new Date().getFullYear()} Scheduly AI. All rights reserved.</p>
     </div>
   </footer>
 );
