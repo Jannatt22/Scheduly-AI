@@ -13,7 +13,7 @@ const Navigation = () => (
         <a href="#demo">Book a Demo</a>
         <a href="#contact">Contact</a>
       </div>
-      <a href="#" className="cta-button">Login</a>
+      <a href="/login" className="cta-button">Login</a>
     </div>
   </nav>
 );
