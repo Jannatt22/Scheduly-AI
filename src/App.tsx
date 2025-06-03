@@ -13,7 +13,7 @@ const Navigation = () => (
         <a href="#demo">Book a Demo</a>
         <a href="#contact">Contact</a>
       </div>
-      <a href="https://calendly.com/siva-effibotic/30min?month=2025-06" target="_blank" rel="noopener noreferrer" className="cta-button">Book a Demo</a>
+      <a href="#" className="cta-button">Login</a>
     </div>
   </nav>
 );
