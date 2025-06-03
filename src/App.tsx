@@ -21,7 +21,7 @@ const Navigation = () => (
 const HeroSection = () => (
   <section className="hero-section" id="home">
     <div className="hero-content">
-      <h1>Streamline claims, calls, and follow-ups with AI built for dental practices</h1>
+      <h1>Streamline claims, calls, and follow-ups with AI built for clinical practices</h1>
       <p>Automate patient communication, insurance claims, and administrative follow-ups to save time, reduce errors, and improve your team's efficiency.
         Empower your staff to focus on patient care while AI handles the repetitive tasks.</p>
       <div className="hero-buttons">
@@ -30,7 +30,7 @@ const HeroSection = () => (
       </div>
     </div>
     <div className="hero-image">
-      <img src="/image-1.jpg" alt="AI Dental Solutions" className="feature-image" />
+      <img src="/image-1.jpg" alt="AI Clinical Solutions" className="feature-image" />
     </div>
   </section>
 );
@@ -75,11 +75,11 @@ const ProductsSection = () => {
 
   return (
     <section className="products-section" id="products">
-      <h2>Our AI-Powered Dental Solutions</h2>
+      <h2>Our AI-Powered Clinical Solutions</h2>
       <div className="products-grid" ref={productsRef}>
         <ProductCard
-          title=" Automated Claim Data Processing"
-          description="Automatically extract and submit data from dental insurance PDFs. Reduce manual errors and speed up reimbursement workflows."
+          title="Automated Claim Data Processing"
+          description="Automatically extract and submit data from clinical insurance PDFs. Reduce manual errors and speed up reimbursement workflows."
           icon="📄"
         />
         <ProductCard
