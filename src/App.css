@@ -46,6 +46,12 @@ body {
   align-items: center;
 }
 
+.logo a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .logo-image {
   height: 100%;
   width: auto;
