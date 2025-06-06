@@ -88,19 +88,20 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(to bottom, #F0F9FF, #E0F2FE);
-  padding: 8rem 2rem;
+  background: #F0F9FF;
+  padding: 8rem 0;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   gap: 5rem;
 }
 
 .hero-content {
   flex: 1;
   max-width: 600px;
+  padding: 0 2rem;
 }
 
 .hero-content h1 {
@@ -123,7 +124,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 3rem;
+  padding: 3rem 2rem 0 0;
 }
 
 .feature-image {
