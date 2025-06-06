@@ -7,12 +7,14 @@ const Navigation = () => (
   <nav className="nav-header">
     <div className="nav-container">
       <div className="logo">
-        <img src="/logo_new.png" alt="Scheduly AI" className="logo-image" />
+        <a href="/">
+          <img src="/logo_new.png" alt="Scheduly AI" className="logo-image" />
+        </a>
       </div>
       <div className="nav-links">
         <a href="#home">Home</a>
         <a href="#products">Products</a>
-        <a href="#demo">Book a Demo</a>
+        <a href="https://calendly.com/siva-effibotic/30min?month=2025-06" target="_blank" rel="noopener noreferrer">Book a Demo</a>
         <a href="#contact">Contact</a>
       </div>
       <a href="/login" className="cta-button">Login</a>
@@ -159,7 +161,7 @@ const DemoSection = () => (
 );
 
 const Footer = () => (
-  <footer className="footer">
+  <footer className="footer" id="contact">
     <div className="footer-content">
       <div className="footer-company">
         <div className="footer-logo">
