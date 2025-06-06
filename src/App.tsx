@@ -5,7 +5,7 @@ const Navigation = () => (
   <nav className="nav-header">
     <div className="nav-container">
       <div className="logo">
-        <img src="/logo-1.jpg" alt="Scheduly AI" className="logo-image" />
+        <img src="/logo_new.png" alt="Scheduly AI" className="logo-image" />
       </div>
       <div className="nav-links">
         <a href="#home">Home</a>
@@ -143,7 +143,7 @@ const Footer = () => (
     <div className="footer-content">
       <div className="footer-company">
         <div className="footer-logo">
-          <img src="/logo-1.jpg" alt="Scheduly AI" className="logo-image" />
+          <img src="/logo_new.png" alt="Scheduly AI" className="logo-image" />
         </div>
         <p className="company-description">
           Transforming dental practices with cutting-edge AI solutions for automation, 

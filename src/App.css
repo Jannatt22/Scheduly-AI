@@ -55,14 +55,19 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .nav-links a {
   text-decoration: none;
   color: var(--text-main);
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
 }
 
 .cta-button {
