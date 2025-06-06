@@ -223,7 +223,7 @@ const Footer = () => (
           efficiency, and enhanced patient care.
         </p>
         <div className="backed-by-section">
-          <img src="/OIP.jpg" alt="BHIVE" className="backed-by-image" />
+          <img src="/BHivelogo.png" alt="BHIVE" className="backed-by-image" />
           <span className="backed-by-text">Backed by BHIVE</span>
         </div>
       </div>
