@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import ProductDetail from './pages/products/ProductDetail';
 
@@ -44,9 +44,9 @@ const ProductCard = ({ title, description, icon, id }: { title: string; descript
       <h3>{title}</h3>
     </div>
     <p>{description}</p>
-    <a href={`/product/${id}`} className="product-cta">
+    <Link to={`/product/${id}`} className="product-cta">
       Learn More
-    </a>
+    </Link>
   </div>
 );
 
