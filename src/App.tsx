@@ -12,10 +12,10 @@ const Navigation = () => (
         </Link>
       </div>
       <div className="nav-links">
-        <Link to="/#home">Home</Link>
-        <Link to="/#products">Products</Link>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
         <a href="https://calendly.com/siva-effibotic/30min?month=2025-06" target="_blank" rel="noopener noreferrer">Book a Demo</a>
-        <Link to="/#contact">Contact</Link>
+        <a href="#contact">Contact</a>
       </div>
       <a href="/login" className="cta-button">Login</a>
     </div>
