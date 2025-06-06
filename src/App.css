@@ -101,7 +101,7 @@ body {
 .hero-content {
   flex: 1;
   max-width: 600px;
-  padding: 0 2rem;
+  padding: 0 4rem;
 }
 
 .hero-content h1 {
