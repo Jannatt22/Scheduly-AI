@@ -72,75 +72,75 @@ const ProductCard: React.FC<ProductCardProps> = ({ id, title, description, icon,
 const ProductsSection = () => {
   const products = [
     {
-      id: "smart-scheduling",
-      title: "Smart Scheduling",
-      description: "AI-powered scheduling that learns from your team's preferences and patterns. Automatically find the best meeting times for everyone.",
+      id: "ai-claim-processor",
+      title: "AI Claim Processor",
+      description: "Automatically extract, validate, and submit insurance claims data with 99.9% accuracy. Reduce processing time by 70% and eliminate manual errors.",
+      icon: "📄",
+      features: [
+        "Automated data extraction",
+        "99.9% accuracy rate",
+        "70% faster processing",
+        "Error elimination"
+      ]
+    },
+    {
+      id: "ai-insurance-verifier",
+      title: "AI Insurance Verifier",
+      description: "Real-time insurance verification with instant coverage confirmation. Reduce verification time from hours to seconds while maintaining accuracy.",
+      icon: "📋",
+      features: [
+        "Real-time verification",
+        "Instant coverage confirmation",
+        "Seconds-level processing",
+        "High accuracy maintenance"
+      ]
+    },
+    {
+      id: "ai-scheduler",
+      title: "AI Scheduler",
+      description: "Intelligent appointment scheduling system that optimizes your calendar, reduces no-shows by 40%, and handles scheduling 24/7.",
       icon: "📅",
       features: [
-        "AI-powered scheduling",
-        "Team preference learning",
-        "Automatic conflict resolution",
-        "Smart time slot suggestions"
+        "Calendar optimization",
+        "40% no-show reduction",
+        "24/7 scheduling",
+        "Smart time slot allocation"
       ]
     },
     {
-      id: "meeting-analytics",
-      title: "Meeting Analytics",
-      description: "Gain insights into your team's meeting patterns and optimize productivity with detailed analytics and reports.",
-      icon: "📊",
-      features: [
-        "Meeting duration tracking",
-        "Participation analytics",
-        "Productivity insights",
-        "Custom report generation"
-      ]
-    },
-    {
-      id: "calendar-integration",
-      title: "Calendar Integration",
-      description: "Seamlessly sync with Google Calendar, Outlook, and other popular platforms. Keep all your schedules in one place.",
-      icon: "🔄",
-      features: [
-        "Multi-platform sync",
-        "Real-time updates",
-        "Cross-platform availability",
-        "Automated conflict detection"
-      ]
-    },
-    {
-      id: "team-collaboration",
-      title: "Team Collaboration",
-      description: "Real-time collaboration tools for efficient meeting planning. Share agendas, documents, and feedback instantly.",
-      icon: "👥",
-      features: [
-        "Real-time collaboration",
-        "Document sharing",
-        "Team feedback system",
-        "Meeting templates"
-      ]
-    },
-    {
-      id: "automated-reminders",
-      title: "Automated Reminders",
-      description: "Smart notifications to keep everyone on track and prepared. Never miss an important meeting again.",
+      id: "ai-recall-manager",
+      title: "AI Recall Manager",
+      description: "Automated patient recall system that tracks follow-ups, sends personalized reminders, and ensures timely patient care coordination.",
       icon: "🔔",
       features: [
-        "Smart notifications",
-        "Custom reminder settings",
-        "Preparation checklists",
-        "Follow-up automation"
+        "Follow-up tracking",
+        "Personalized reminders",
+        "Care coordination",
+        "Automated scheduling"
       ]
     },
     {
-      id: "custom-workflows",
-      title: "Custom Workflows",
-      description: "Create and automate your team's unique scheduling workflows. Tailor the system to your specific needs.",
-      icon: "⚙️",
+      id: "ai-emergency-handler",
+      title: "AI Emergency Handler",
+      description: "24/7 emergency call management system that prioritizes urgent cases, provides immediate assistance, and ensures proper emergency response.",
+      icon: "🚨",
       features: [
-        "Workflow automation",
-        "Custom scheduling rules",
-        "Team-specific settings",
-        "Integration customization"
+        "24/7 emergency management",
+        "Urgent case prioritization",
+        "Immediate assistance",
+        "Emergency response coordination"
+      ]
+    },
+    {
+      id: "ai-virtual-assistant",
+      title: "AI Virtual Assistant",
+      description: "Comprehensive virtual assistant that handles patient inquiries, appointment confirmations, and general information requests around the clock.",
+      icon: "🤖",
+      features: [
+        "24/7 patient support",
+        "Inquiry handling",
+        "Appointment management",
+        "Information assistance"
       ]
     }
   ];
@@ -308,75 +308,75 @@ const ProductDetail = () => {
   const { productId } = useParams();
   const products = [
     {
-      id: "smart-scheduling",
-      title: "Smart Scheduling",
-      description: "AI-powered scheduling that learns from your team's preferences and patterns. Automatically find the best meeting times for everyone.",
+      id: "ai-claim-processor",
+      title: "AI Claim Processor",
+      description: "Automatically extract, validate, and submit insurance claims data with 99.9% accuracy. Reduce processing time by 70% and eliminate manual errors.",
+      icon: "📄",
+      features: [
+        "Automated data extraction",
+        "99.9% accuracy rate",
+        "70% faster processing",
+        "Error elimination"
+      ]
+    },
+    {
+      id: "ai-insurance-verifier",
+      title: "AI Insurance Verifier",
+      description: "Real-time insurance verification with instant coverage confirmation. Reduce verification time from hours to seconds while maintaining accuracy.",
+      icon: "📋",
+      features: [
+        "Real-time verification",
+        "Instant coverage confirmation",
+        "Seconds-level processing",
+        "High accuracy maintenance"
+      ]
+    },
+    {
+      id: "ai-scheduler",
+      title: "AI Scheduler",
+      description: "Intelligent appointment scheduling system that optimizes your calendar, reduces no-shows by 40%, and handles scheduling 24/7.",
       icon: "📅",
       features: [
-        "AI-powered scheduling",
-        "Team preference learning",
-        "Automatic conflict resolution",
-        "Smart time slot suggestions"
+        "Calendar optimization",
+        "40% no-show reduction",
+        "24/7 scheduling",
+        "Smart time slot allocation"
       ]
     },
     {
-      id: "meeting-analytics",
-      title: "Meeting Analytics",
-      description: "Gain insights into your team's meeting patterns and optimize productivity with detailed analytics and reports.",
-      icon: "📊",
-      features: [
-        "Meeting duration tracking",
-        "Participation analytics",
-        "Productivity insights",
-        "Custom report generation"
-      ]
-    },
-    {
-      id: "calendar-integration",
-      title: "Calendar Integration",
-      description: "Seamlessly sync with Google Calendar, Outlook, and other popular platforms. Keep all your schedules in one place.",
-      icon: "🔄",
-      features: [
-        "Multi-platform sync",
-        "Real-time updates",
-        "Cross-platform availability",
-        "Automated conflict detection"
-      ]
-    },
-    {
-      id: "team-collaboration",
-      title: "Team Collaboration",
-      description: "Real-time collaboration tools for efficient meeting planning. Share agendas, documents, and feedback instantly.",
-      icon: "👥",
-      features: [
-        "Real-time collaboration",
-        "Document sharing",
-        "Team feedback system",
-        "Meeting templates"
-      ]
-    },
-    {
-      id: "automated-reminders",
-      title: "Automated Reminders",
-      description: "Smart notifications to keep everyone on track and prepared. Never miss an important meeting again.",
+      id: "ai-recall-manager",
+      title: "AI Recall Manager",
+      description: "Automated patient recall system that tracks follow-ups, sends personalized reminders, and ensures timely patient care coordination.",
       icon: "🔔",
       features: [
-        "Smart notifications",
-        "Custom reminder settings",
-        "Preparation checklists",
-        "Follow-up automation"
+        "Follow-up tracking",
+        "Personalized reminders",
+        "Care coordination",
+        "Automated scheduling"
       ]
     },
     {
-      id: "custom-workflows",
-      title: "Custom Workflows",
-      description: "Create and automate your team's unique scheduling workflows. Tailor the system to your specific needs.",
-      icon: "⚙️",
+      id: "ai-emergency-handler",
+      title: "AI Emergency Handler",
+      description: "24/7 emergency call management system that prioritizes urgent cases, provides immediate assistance, and ensures proper emergency response.",
+      icon: "🚨",
       features: [
-        "Workflow automation",
-        "Custom scheduling rules",
-        "Team-specific settings",
-        "Integration customization"
+        "24/7 emergency management",
+        "Urgent case prioritization",
+        "Immediate assistance",
+        "Emergency response coordination"
+      ]
+    },
+    {
+      id: "ai-virtual-assistant",
+      title: "AI Virtual Assistant",
+      description: "Comprehensive virtual assistant that handles patient inquiries, appointment confirmations, and general information requests around the clock.",
+      icon: "🤖",
+      features: [
+        "24/7 patient support",
+        "Inquiry handling",
+        "Appointment management",
+        "Information assistance"
       ]
     }
   ];
