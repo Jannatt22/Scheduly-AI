@@ -44,14 +44,7 @@ const ProductCard = ({ title, description, icon, id }: { title: string; descript
       <h3>{title}</h3>
     </div>
     <p>{description}</p>
-    <Link 
-      to={`/product/${id}`} 
-      className="product-cta" 
-      onClick={(e) => {
-        e.stopPropagation();
-        window.scrollTo(0, 0);
-      }}
-    >
+    <Link to={`/product/${id}`} className="product-cta">
       Learn More
     </Link>
   </div>
