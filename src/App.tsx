@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useParams } from 'react-router-dom';
 import './App.css';
 
@@ -70,6 +70,28 @@ const ProductCard: React.FC<ProductCardProps> = ({ id, title, description, icon,
 
 // Products Section Component
 const ProductsSection = () => {
+  const productsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    const productCards = productsRef.current?.querySelectorAll('.product-card');
+    productCards?.forEach((card) => observer.observe(card));
+
+    return () => {
+      productCards?.forEach((card) => observer.unobserve(card));
+    };
+  }, []);
+
   const products = [
     {
       id: "ai-claim-processor",
@@ -148,7 +170,7 @@ const ProductsSection = () => {
   return (
     <section id="products" className="products-section">
       <h2>Our Products</h2>
-      <div className="products-grid">
+      <div className="products-grid" ref={productsRef}>
         {products.map((product, index) => (
           <ProductCard key={index} {...product} />
         ))}
