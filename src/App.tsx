@@ -42,8 +42,11 @@ const HeroSection = () => (
   </section>
 );
 
-const ProductCard = ({ title, description, icon, id }: { title: string; description: string; icon: string; id: string }) => (
-  <div className="bg-bg-light p-6 rounded-2xl shadow-md transition-transform hover:-translate-y-1 hover:shadow-lg opacity-0 animate-fade-in">
+const ProductCard = ({ title, description, icon, id, index }: { title: string; description: string; icon: string; id: string; index: number }) => (
+  <div 
+    className="bg-bg-light p-6 rounded-2xl shadow-md transition-transform hover:-translate-y-1 hover:shadow-lg opacity-0 animate-fade-in"
+    style={{ animationDelay: `${index * 0.1}s` }}
+  >
     <div className="flex items-center gap-4 mb-5">
       <div className="text-3xl min-w-8 flex items-center justify-center">{icon}</div>
       <h3 className="text-xl text-text-main leading-relaxed flex-1">{title}</h3>
@@ -82,46 +85,56 @@ const ProductsSection = () => {
     };
   }, []);
 
+  const products = [
+    {
+      title: "AI Claim Processor",
+      description: "Automatically extract, validate, and submit insurance claims data with 99.9% accuracy. Reduce processing time by 70% and eliminate manual errors.",
+      icon: "📄",
+      id: "ai-claim-processor"
+    },
+    {
+      title: "AI Insurance Verifier",
+      description: "Real-time insurance verification with instant coverage confirmation. Reduce verification time from hours to seconds while maintaining accuracy.",
+      icon: "📋",
+      id: "ai-insurance-verifier"
+    },
+    {
+      title: "AI Scheduler",
+      description: "Intelligent appointment scheduling system that optimizes your calendar, reduces no-shows by 40%, and handles scheduling 24/7.",
+      icon: "📅",
+      id: "ai-scheduler"
+    },
+    {
+      title: "AI Recall Manager",
+      description: "Automated patient recall system that tracks follow-ups, sends personalized reminders, and ensures timely patient care coordination.",
+      icon: "🔔",
+      id: "ai-recall-manager"
+    },
+    {
+      title: "AI Emergency Handler",
+      description: "24/7 emergency call management system that prioritizes urgent cases, provides immediate assistance, and ensures proper emergency response.",
+      icon: "🚨",
+      id: "ai-emergency-handler"
+    },
+    {
+      title: "AI Virtual Assistant",
+      description: "Comprehensive virtual assistant that handles patient inquiries, appointment confirmations, and general information requests around the clock.",
+      icon: "🤖",
+      id: "ai-virtual-assistant"
+    }
+  ];
+
   return (
     <section className="py-24 px-16 bg-white" id="products">
       <h2 className="text-4xl text-center mb-12 text-text-main">Our AI-Powered Clinical Solutions</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto" ref={productsRef}>
-        <ProductCard
-          title="AI Claim Processor"
-          description="Automatically extract, validate, and submit insurance claims data with 99.9% accuracy. Reduce processing time by 70% and eliminate manual errors."
-          icon="📄"
-          id="ai-claim-processor"
-        />
-        <ProductCard
-          title="AI Insurance Verifier"
-          description="Real-time insurance verification with instant coverage confirmation. Reduce verification time from hours to seconds while maintaining accuracy."
-          icon="📋"
-          id="ai-insurance-verifier"
-        />
-        <ProductCard
-          title="AI Scheduler"
-          description="Intelligent appointment scheduling system that optimizes your calendar, reduces no-shows by 40%, and handles scheduling 24/7."
-          icon="📅"
-          id="ai-scheduler"
-        />
-        <ProductCard
-          title="AI Recall Manager"
-          description="Automated patient recall system that tracks follow-ups, sends personalized reminders, and ensures timely patient care coordination."
-          icon="🔔"
-          id="ai-recall-manager"
-        />
-        <ProductCard
-          title="AI Emergency Handler"
-          description="24/7 emergency call management system that prioritizes urgent cases, provides immediate assistance, and ensures proper emergency response."
-          icon="🚨"
-          id="ai-emergency-handler"
-        />
-        <ProductCard
-          title="AI Virtual Assistant"
-          description="Comprehensive virtual assistant that handles patient inquiries, appointment confirmations, and general information requests around the clock."
-          icon="🤖"
-          id="ai-virtual-assistant"
-        />
+        {products.map((product, index) => (
+          <ProductCard
+            key={product.id}
+            {...product}
+            index={index}
+          />
+        ))}
       </div>
     </section>
   );
