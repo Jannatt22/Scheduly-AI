@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+import ProductDetail from './pages/products/ProductDetail';
 
 const Navigation = () => (
   <nav className="nav-header">
@@ -35,14 +37,14 @@ const HeroSection = () => (
   </section>
 );
 
-const ProductCard = ({ title, description, icon }: { title: string; description: string; icon: string }) => (
+const ProductCard = ({ title, description, icon, id }: { title: string; description: string; icon: string; id: string }) => (
   <div className="product-card">
     <div className="product-header">
       <div className="product-icon">{icon}</div>
       <h3>{title}</h3>
     </div>
     <p>{description}</p>
-    <button className="product-cta">Learn More</button>
+    <Link to={`/product/${id}`} className="product-cta">Learn More</Link>
   </div>
 );
 
@@ -81,31 +83,37 @@ const ProductsSection = () => {
           title="AI Claim Processor"
           description="Automatically extract, validate, and submit insurance claims data with 99.9% accuracy. Reduce processing time by 70% and eliminate manual errors."
           icon="📄"
+          id="ai-claim-processor"
         />
         <ProductCard
           title="AI Insurance Verifier"
           description="Real-time insurance verification with instant coverage confirmation. Reduce verification time from hours to seconds while maintaining accuracy."
           icon="📋"
+          id="ai-insurance-verifier"
         />
         <ProductCard
           title="AI Scheduler"
           description="Intelligent appointment scheduling system that optimizes your calendar, reduces no-shows by 40%, and handles scheduling 24/7."
           icon="📅"
+          id="ai-scheduler"
         />
         <ProductCard
           title="AI Recall Manager"
           description="Automated patient recall system that tracks follow-ups, sends personalized reminders, and ensures timely patient care coordination."
           icon="🔔"
+          id="ai-recall-manager"
         />
         <ProductCard
           title="AI Emergency Handler"
           description="24/7 emergency call management system that prioritizes urgent cases, provides immediate assistance, and ensures proper emergency response."
           icon="🚨"
+          id="ai-emergency-handler"
         />
         <ProductCard
           title="AI Virtual Assistant"
           description="Comprehensive virtual assistant that handles patient inquiries, appointment confirmations, and general information requests around the clock."
           icon="🤖"
+          id="ai-virtual-assistant"
         />
       </div>
     </section>
@@ -201,16 +209,25 @@ const Footer = () => (
 
 function App() {
   return (
-    <div className="app">
-      <Navigation />
-      <main>
-        <HeroSection />
-        <ProductsSection />
-        <BenefitsSection />
-        <DemoSection />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="app">
+        <Navigation />
+        <main>
+          <Routes>
+            <Route path="/" element={
+              <>
+                <HeroSection />
+                <ProductsSection />
+                <BenefitsSection />
+                <DemoSection />
+              </>
+            } />
+            <Route path="/product/:productId" element={<ProductDetail />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
