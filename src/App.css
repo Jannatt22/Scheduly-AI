@@ -377,6 +377,28 @@ body {
   margin-bottom: 2rem;
 }
 
+.backed-by-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.backed-by-image {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.backed-by-text {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
 .footer-contact {
   flex: 1;
   max-width: 400px;

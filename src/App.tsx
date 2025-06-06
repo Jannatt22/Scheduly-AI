@@ -222,6 +222,10 @@ const Footer = () => (
           Transforming clinical practices with cutting-edge AI solutions for automation, 
           efficiency, and enhanced patient care.
         </p>
+        <div className="backed-by-section">
+          <img src="/OIP.jpg" alt="BHIVE" className="backed-by-image" />
+          <span className="backed-by-text">Backed by BHIVE</span>
+        </div>
       </div>
       <div className="footer-contact">
         <h3>Contact Us</h3>
