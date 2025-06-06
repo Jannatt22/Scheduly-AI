@@ -7,7 +7,9 @@ const Navigation = () => (
   <nav className="nav-header">
     <div className="nav-container">
       <div className="logo">
-        <img src="/logo_new.png" alt="Scheduly AI" className="logo-image" />
+        <Link to="/">
+          <img src="/logo_new.png" alt="Scheduly AI" className="logo-image" />
+        </Link>
       </div>
       <div className="nav-links">
         <a href="#home">Home</a>
