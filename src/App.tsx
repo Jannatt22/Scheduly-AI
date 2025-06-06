@@ -152,11 +152,62 @@ const BenefitsSection = () => (
   </section>
 );
 
-const DemoSection = () => (
-  <section className="demo-section" id="demo">
-    <h2>See It In Action</h2>
-    <p>Schedule a live walkthrough with our AI specialists.</p>
-    <a href="https://calendly.com/siva-effibotic/30min?month=2025-06" target="_blank" rel="noopener noreferrer" className="cta-button">Book a Demo</a>
+const TestimonialsSection = () => (
+  <section className="testimonials-section" id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <p className="testimonials-subtitle">Hear from businesses that have transformed their operations with Effibotic</p>
+    <div className="testimonials-grid">
+      <div className="testimonial-card">
+        <div className="testimonial-content">
+          <p className="testimonial-text">"The AI Receptionist has revolutionized our practice. It handles appointment scheduling 24/7, reduces no-shows with automated reminders, and our patients love how easy it is to use. We've seen a 30% increase in booking efficiency."</p>
+          <div className="testimonial-author">
+            <h4>Dr. Emily Chen</h4>
+            <p>Dental Clinic Owner</p>
+          </div>
+        </div>
+        <div className="star-rating">
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+        </div>
+      </div>
+
+      <div className="testimonial-card">
+        <div className="testimonial-content">
+          <p className="testimonial-text">"Our customer support has been transformed by the AI Chatbot. It handles over 80% of routine inquiries instantly, provides 24/7 support, and has improved our customer satisfaction scores by 40%. The multilingual support is a game-changer."</p>
+          <div className="testimonial-author">
+            <h4>Mark Thompson</h4>
+            <p>E-commerce Director</p>
+          </div>
+        </div>
+        <div className="star-rating">
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+        </div>
+      </div>
+
+      <div className="testimonial-card">
+        <div className="testimonial-content">
+          <p className="testimonial-text">"The AI Lead Generator has completely transformed our sales process. It not only identifies potential leads but qualifies them with incredible accuracy. Our conversion rates have increased by 45%, and the automated nurturing sequences save our team countless hours."</p>
+          <div className="testimonial-author">
+            <h4>Lisa Rodriguez</h4>
+            <p>Sales Manager</p>
+          </div>
+        </div>
+        <div className="star-rating">
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+          <span>★</span>
+        </div>
+      </div>
+    </div>
   </section>
 );
 
@@ -223,7 +274,7 @@ function App() {
                 <HeroSection />
                 <ProductsSection />
                 <BenefitsSection />
-                <DemoSection />
+                <TestimonialsSection />
                 <Footer />
               </>
             } />
