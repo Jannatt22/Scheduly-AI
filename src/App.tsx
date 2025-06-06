@@ -146,7 +146,7 @@ const Footer = () => (
           <img src="/logo_new.png" alt="Scheduly AI" className="logo-image" />
         </div>
         <p className="company-description">
-          Transforming dental practices with cutting-edge AI solutions for automation, 
+          Transforming clinical practices with cutting-edge AI solutions for automation, 
           efficiency, and enhanced patient care.
         </p>
       </div>
