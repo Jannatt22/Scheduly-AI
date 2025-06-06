@@ -148,64 +148,39 @@ const productData: Record<string, ProductMetrics> = {
   }
 };
 
-const ProductDetailNav = () => (
-  <nav className="nav-header">
-    <div className="nav-container">
-      <div className="logo">
-        <Link to="/">
-          <img src="/logo_new.png" alt="Scheduly AI" className="logo-image" />
-        </Link>
-      </div>
-      <div className="nav-links">
-        <Link to="/#home">Home</Link>
-        <Link to="/#products">Products</Link>
-        <a href="https://calendly.com/siva-effibotic/30min?month=2025-06" target="_blank" rel="noopener noreferrer">Book a Demo</a>
-        <Link to="/#contact">Contact</Link>
-      </div>
-      <a href="/login" className="cta-button">Login</a>
-    </div>
-  </nav>
-);
-
 const ProductDetail: React.FC = () => {
   const { productId } = useParams<{ productId: string }>();
   const product = productId ? productData[productId] : null;
 
   if (!product) {
     return (
-      <>
-        <ProductDetailNav />
-        <div className="product-detail-container">
-          <h1>Product Not Found</h1>
-          <Link to="/#products" className="back-button">Back to Products</Link>
-        </div>
-      </>
+      <div className="product-detail-container">
+        <h1>Product Not Found</h1>
+        <Link to="/#products" className="back-button">Back to Products</Link>
+      </div>
     );
   }
 
   return (
-    <>
-      <ProductDetailNav />
-      <div className="product-detail-container">
-        <div className="product-header">
-          <span className="product-icon">{product.icon}</span>
-          <h1>{product.title}</h1>
-        </div>
-        <p className="product-description">{product.description}</p>
-        
-        <div className="metrics-grid">
-          {product.metrics.map((metric, index) => (
-            <div key={index} className="metric-card">
-              <h3>{metric.label}</h3>
-              <div className="metric-value">{metric.value}</div>
-              <p>{metric.description}</p>
-            </div>
-          ))}
-        </div>
-
-        <Link to="/#products" className="back-button">Back to Products</Link>
+    <div className="product-detail-container">
+      <div className="product-header">
+        <span className="product-icon">{product.icon}</span>
+        <h1>{product.title}</h1>
       </div>
-    </>
+      <p className="product-description">{product.description}</p>
+      
+      <div className="metrics-grid">
+        {product.metrics.map((metric, index) => (
+          <div key={index} className="metric-card">
+            <h3>{metric.label}</h3>
+            <div className="metric-value">{metric.value}</div>
+            <p>{metric.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <Link to="/#products" className="back-button">Back to Products</Link>
+    </div>
   );
 };
 
