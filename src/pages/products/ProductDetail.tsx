@@ -156,7 +156,7 @@ const ProductDetail: React.FC = () => {
     return (
       <div className="product-detail-container">
         <h1>Product Not Found</h1>
-        <Link to="/" className="back-button">Back to Home</Link>
+        <Link to="/#products" className="back-button">Back to Products</Link>
       </div>
     );
   }
@@ -179,7 +179,7 @@ const ProductDetail: React.FC = () => {
         ))}
       </div>
 
-      <Link to="/" className="back-button">Back to Products</Link>
+      <Link to="/#products" className="back-button">Back to Products</Link>
     </div>
   );
 };
