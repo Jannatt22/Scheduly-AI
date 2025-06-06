@@ -157,10 +157,10 @@ const ProductDetailNav = () => (
         </Link>
       </div>
       <div className="nav-links">
-        <Link to="/#home">Home</Link>
-        <Link to="/#products">Products</Link>
+        <Link to="#home">Home</Link>
+        <Link to="#products">Products</Link>
         <a href="https://calendly.com/siva-effibotic/30min?month=2025-06" target="_blank" rel="noopener noreferrer">Book a Demo</a>
-        <Link to="/#contact">Contact</Link>
+        <Link to="#contact">Contact</Link>
       </div>
       <a href="/login" className="cta-button">Login</a>
     </div>
