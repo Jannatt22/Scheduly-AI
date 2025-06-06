@@ -43,7 +43,7 @@ const HeroSection = () => (
 );
 
 const ProductCard = ({ title, description, icon, id }: { title: string; description: string; icon: string; id: string }) => (
-  <div className="bg-bg-light p-6 rounded-2xl shadow-md transition-transform hover:-translate-y-1 hover:shadow-lg opacity-0">
+  <div className="bg-bg-light p-6 rounded-2xl shadow-md transition-transform hover:-translate-y-1 hover:shadow-lg opacity-0 animate-fade-in">
     <div className="flex items-center gap-4 mb-5">
       <div className="text-3xl min-w-8 flex items-center justify-center">{icon}</div>
       <h3 className="text-xl text-text-main leading-relaxed flex-1">{title}</h3>
