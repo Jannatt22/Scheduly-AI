@@ -16,7 +16,7 @@ const Navigation = () => {
       <div className="nav-container">
         <div className="logo">
           <a href="/">
-            <img src="/logo.png" alt="Scheduly AI" className="logo-image" />
+            <img src="/logo_new.png" alt="Scheduly AI" className="logo-image" />
           </a>
         </div>
         <nav className="nav-links">
@@ -44,7 +44,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="hero-image">
-        <img src="/hero-image.png" alt="AI Scheduling Interface" className="feature-image" />
+        <img src="/image-1.png" alt="AI Scheduling Interface" className="feature-image" />
       </div>
     </section>
   );
@@ -208,13 +208,13 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-company">
           <div className="footer-logo">
-            <img src="/logo.png" alt="Scheduly AI" className="logo-image" />
+            <img src="/logo_new.png" alt="Scheduly AI" className="logo-image" />
           </div>
           <p className="company-description">
             Scheduly AI helps teams streamline their scheduling process with intelligent automation and powerful analytics.
           </p>
           <div className="backed-by-section">
-            <img src="/backed-by.png" alt="Backed by" className="backed-by-image" />
+            <img src="/BHiveLogo.png" alt="Backed by" className="backed-by-image" />
             <span className="backed-by-text">Backed by Y Combinator</span>
           </div>
         </div>
