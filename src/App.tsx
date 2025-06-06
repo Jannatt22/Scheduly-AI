@@ -27,7 +27,7 @@ const Navigation = () => {
           <a href="#book-demo">Book Demo</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a href="#book-demo" className="cta-button">Get Started</a>
+        <a href="#login" className="cta-button">Login</a>
       </div>
     </header>
   );
