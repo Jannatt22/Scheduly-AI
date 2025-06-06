@@ -78,24 +78,34 @@ const ProductsSection = () => {
       <h2>Our AI-Powered Clinical Solutions</h2>
       <div className="products-grid" ref={productsRef}>
         <ProductCard
-          title="Automated Claim Data Processing"
-          description="Automatically extract and submit data from clinical insurance PDFs. Reduce manual errors and speed up reimbursement workflows."
+          title="AI Claim Processor"
+          description="Automatically extract, validate, and submit insurance claims data with 99.9% accuracy. Reduce processing time by 70% and eliminate manual errors."
           icon="📄"
         />
         <ProductCard
-          title="Insurance Verification"
-          description="Streamline insurance verification with AI-powered voice agents that confirm patient coverage details quickly, accurately, and within seconds."
+          title="AI Insurance Verifier"
+          description="Real-time insurance verification with instant coverage confirmation. Reduce verification time from hours to seconds while maintaining accuracy."
           icon="📋"
         />
         <ProductCard
-          title="AI Receptionist"
-          description="Handle incoming calls, FAQs, and scheduling 24/7 with our intelligent virtual front desk."
-          icon="🤖"
+          title="AI Scheduler"
+          description="Intelligent appointment scheduling system that optimizes your calendar, reduces no-shows by 40%, and handles scheduling 24/7."
+          icon="📅"
         />
         <ProductCard
-          title="Automated Appointment Reminders"
-          description="Boost patient retention with proactive, intelligent follow-up calls and appointment reminders."
-          icon="🔁"
+          title="AI Recall Manager"
+          description="Automated patient recall system that tracks follow-ups, sends personalized reminders, and ensures timely patient care coordination."
+          icon="🔔"
+        />
+        <ProductCard
+          title="AI Emergency Handler"
+          description="24/7 emergency call management system that prioritizes urgent cases, provides immediate assistance, and ensures proper emergency response."
+          icon="🚨"
+        />
+        <ProductCard
+          title="AI Virtual Assistant"
+          description="Comprehensive virtual assistant that handles patient inquiries, appointment confirmations, and general information requests around the clock."
+          icon="🤖"
         />
       </div>
     </section>
