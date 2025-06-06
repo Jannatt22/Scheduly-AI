@@ -382,9 +382,10 @@ body {
   align-items: center;
   gap: 1rem;
   background: rgb(255, 255, 255);
-  padding: 0.5rem 0.75rem;
+  padding: 0.7rem 0.75rem;
   border-radius: 8px;
   margin-bottom: 2rem;
+  width: fit-content;
 }
 
 .backed-by-image {
