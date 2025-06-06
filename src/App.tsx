@@ -1,12 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useParams } from 'react-router-dom';
 import './App.css';
 
 // TypeScript interfaces
 interface ProductCardProps {
+  id: string;
   title: string;
   description: string;
   icon: string;
+  features: string[];
 }
 
 // Navigation Component
@@ -20,12 +22,12 @@ const Navigation = () => {
           </a>
         </div>
         <nav className="nav-links">
+          <a href="/">Home</a>
           <a href="#products">Products</a>
-          <a href="#benefits">Benefits</a>
-          <a href="#testimonials">Testimonials</a>
+          <a href="#book-demo">Book Demo</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a href="#contact" className="cta-button">Get Started</a>
+        <a href="#book-demo" className="cta-button">Get Started</a>
       </div>
     </header>
   );
@@ -51,7 +53,7 @@ const HeroSection = () => {
 };
 
 // Product Card Component
-const ProductCard: React.FC<ProductCardProps> = ({ title, description, icon }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ id, title, description, icon, features }) => {
   return (
     <div className="product-card">
       <div className="product-header">
@@ -59,7 +61,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, description, icon }) =
         <h3>{title}</h3>
       </div>
       <p>{description}</p>
-      <Link to={`/product/${title.toLowerCase().replace(/\s+/g, '-')}`} className="product-cta">
+      <Link to={`/product/${id}`} className="product-cta">
         Learn More
       </Link>
     </div>
@@ -70,34 +72,76 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, description, icon }) =
 const ProductsSection = () => {
   const products = [
     {
+      id: "smart-scheduling",
       title: "Smart Scheduling",
-      description: "AI-powered scheduling that learns from your team's preferences and patterns.",
-      icon: "📅"
+      description: "AI-powered scheduling that learns from your team's preferences and patterns. Automatically find the best meeting times for everyone.",
+      icon: "📅",
+      features: [
+        "AI-powered scheduling",
+        "Team preference learning",
+        "Automatic conflict resolution",
+        "Smart time slot suggestions"
+      ]
     },
     {
+      id: "meeting-analytics",
       title: "Meeting Analytics",
-      description: "Gain insights into your team's meeting patterns and optimize productivity.",
-      icon: "📊"
+      description: "Gain insights into your team's meeting patterns and optimize productivity with detailed analytics and reports.",
+      icon: "📊",
+      features: [
+        "Meeting duration tracking",
+        "Participation analytics",
+        "Productivity insights",
+        "Custom report generation"
+      ]
     },
     {
+      id: "calendar-integration",
       title: "Calendar Integration",
-      description: "Seamlessly sync with Google Calendar, Outlook, and other popular platforms.",
-      icon: "🔄"
+      description: "Seamlessly sync with Google Calendar, Outlook, and other popular platforms. Keep all your schedules in one place.",
+      icon: "🔄",
+      features: [
+        "Multi-platform sync",
+        "Real-time updates",
+        "Cross-platform availability",
+        "Automated conflict detection"
+      ]
     },
     {
+      id: "team-collaboration",
       title: "Team Collaboration",
-      description: "Real-time collaboration tools for efficient meeting planning.",
-      icon: "👥"
+      description: "Real-time collaboration tools for efficient meeting planning. Share agendas, documents, and feedback instantly.",
+      icon: "👥",
+      features: [
+        "Real-time collaboration",
+        "Document sharing",
+        "Team feedback system",
+        "Meeting templates"
+      ]
     },
     {
+      id: "automated-reminders",
       title: "Automated Reminders",
-      description: "Smart notifications to keep everyone on track and prepared.",
-      icon: "🔔"
+      description: "Smart notifications to keep everyone on track and prepared. Never miss an important meeting again.",
+      icon: "🔔",
+      features: [
+        "Smart notifications",
+        "Custom reminder settings",
+        "Preparation checklists",
+        "Follow-up automation"
+      ]
     },
     {
+      id: "custom-workflows",
       title: "Custom Workflows",
-      description: "Create and automate your team's unique scheduling workflows.",
-      icon: "⚙️"
+      description: "Create and automate your team's unique scheduling workflows. Tailor the system to your specific needs.",
+      icon: "⚙️",
+      features: [
+        "Workflow automation",
+        "Custom scheduling rules",
+        "Team-specific settings",
+        "Integration customization"
+      ]
     }
   ];
 
@@ -261,10 +305,110 @@ const Footer = () => {
 
 // Product Detail Page Component
 const ProductDetail = () => {
+  const { productId } = useParams();
+  const products = [
+    {
+      id: "smart-scheduling",
+      title: "Smart Scheduling",
+      description: "AI-powered scheduling that learns from your team's preferences and patterns. Automatically find the best meeting times for everyone.",
+      icon: "📅",
+      features: [
+        "AI-powered scheduling",
+        "Team preference learning",
+        "Automatic conflict resolution",
+        "Smart time slot suggestions"
+      ]
+    },
+    {
+      id: "meeting-analytics",
+      title: "Meeting Analytics",
+      description: "Gain insights into your team's meeting patterns and optimize productivity with detailed analytics and reports.",
+      icon: "📊",
+      features: [
+        "Meeting duration tracking",
+        "Participation analytics",
+        "Productivity insights",
+        "Custom report generation"
+      ]
+    },
+    {
+      id: "calendar-integration",
+      title: "Calendar Integration",
+      description: "Seamlessly sync with Google Calendar, Outlook, and other popular platforms. Keep all your schedules in one place.",
+      icon: "🔄",
+      features: [
+        "Multi-platform sync",
+        "Real-time updates",
+        "Cross-platform availability",
+        "Automated conflict detection"
+      ]
+    },
+    {
+      id: "team-collaboration",
+      title: "Team Collaboration",
+      description: "Real-time collaboration tools for efficient meeting planning. Share agendas, documents, and feedback instantly.",
+      icon: "👥",
+      features: [
+        "Real-time collaboration",
+        "Document sharing",
+        "Team feedback system",
+        "Meeting templates"
+      ]
+    },
+    {
+      id: "automated-reminders",
+      title: "Automated Reminders",
+      description: "Smart notifications to keep everyone on track and prepared. Never miss an important meeting again.",
+      icon: "🔔",
+      features: [
+        "Smart notifications",
+        "Custom reminder settings",
+        "Preparation checklists",
+        "Follow-up automation"
+      ]
+    },
+    {
+      id: "custom-workflows",
+      title: "Custom Workflows",
+      description: "Create and automate your team's unique scheduling workflows. Tailor the system to your specific needs.",
+      icon: "⚙️",
+      features: [
+        "Workflow automation",
+        "Custom scheduling rules",
+        "Team-specific settings",
+        "Integration customization"
+      ]
+    }
+  ];
+
+  const product = products.find(p => p.id === productId);
+
+  if (!product) {
+    return (
+      <div className="product-detail">
+        <h1>Product Not Found</h1>
+        <p>The requested product could not be found.</p>
+        <Link to="/" className="cta-button">Back to Home</Link>
+      </div>
+    );
+  }
+
   return (
     <div className="product-detail">
-      <h1>Product Detail Page</h1>
-      <p>This is a placeholder for the product detail page.</p>
+      <div className="product-detail-header">
+        <div className="product-detail-icon">{product.icon}</div>
+        <h1>{product.title}</h1>
+      </div>
+      <p className="product-detail-description">{product.description}</p>
+      <div className="product-detail-features">
+        <h2>Key Features</h2>
+        <ul>
+          {product.features.map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+        </ul>
+      </div>
+      <Link to="/" className="cta-button">Back to Products</Link>
     </div>
   );
 };
