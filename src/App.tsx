@@ -222,12 +222,12 @@ function App() {
                 <ProductsSection />
                 <BenefitsSection />
                 <DemoSection />
+                <Footer />
               </>
             } />
             <Route path="/product/:productId" element={<ProductDetail />} />
           </Routes>
         </main>
-        <Footer />
       </div>
     </Router>
   );
