@@ -38,10 +38,10 @@ const HeroSection = () => {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <h1>AI-Powered Scheduling for Modern Teams</h1>
-        <p>Streamline your team's scheduling process with our intelligent AI assistant. Save time, reduce conflicts, and boost productivity.</p>
+        <h1>Transforming Clinical Practice with AI</h1>
+        <p>Transforming clinical practices with cutting-edge AI solutions for automation, efficiency, and enhanced patient care.</p>
         <div className="hero-buttons">
-          <a href="https://calendly.com/siva-effibotic/30min?month=2025-06" target="_blank" rel="noopener noreferrer" className="cta-button">Book a Demo</a>
+          <a href="https://calendly.com/siva-effibotic/30min?month=2025-06" target="_blank" rel="noopener noreferrer" className="cta-button">Book Demo</a>
           <a href="#learn-more" className="secondary-button">Learn More</a>
         </div>
       </div>
