@@ -135,10 +135,10 @@ const ProductsSection = () => {
       description: "Automated patient recall system that tracks follow-ups, sends personalized reminders, and ensures timely patient care coordination.",
       icon: "🔔",
       features: [
-        "Follow-up tracking",
-        "Personalized reminders",
+        "Automated follow-up tracking",
+        "Personalized patient reminders",
         "Care coordination",
-        "Automated scheduling"
+        "EHR Integration"
       ]
     },
     {
@@ -147,7 +147,7 @@ const ProductsSection = () => {
       description: "24/7 emergency call management system that prioritizes urgent cases, provides immediate assistance, and ensures proper emergency response.",
       icon: "🚨",
       features: [
-        "24/7 emergency management",
+        "Real-time emergency management",
         "Urgent case prioritization",
         "Immediate assistance",
         "Emergency response coordination"
@@ -371,10 +371,10 @@ const ProductDetail = () => {
       description: "Automated patient recall system that tracks follow-ups, sends personalized reminders, and ensures timely patient care coordination.",
       icon: "🔔",
       features: [
-        "Follow-up tracking",
-        "Personalized reminders",
+        "Automated follow-up tracking",
+        "Personalized patient reminders",
         "Care coordination",
-        "Automated scheduling"
+        "EHR Integration"
       ]
     },
     {
@@ -383,7 +383,7 @@ const ProductDetail = () => {
       description: "24/7 emergency call management system that prioritizes urgent cases, provides immediate assistance, and ensures proper emergency response.",
       icon: "🚨",
       features: [
-        "24/7 emergency management",
+        "Real-time emergency management",
         "Urgent case prioritization",
         "Immediate assistance",
         "Emergency response coordination"
@@ -395,10 +395,10 @@ const ProductDetail = () => {
       description: "Comprehensive virtual assistant that handles patient inquiries, appointment confirmations, and general information requests around the clock.",
       icon: "🤖",
       features: [
-        "24/7 patient support",
-        "Inquiry handling",
+        "Automated patient support",
+        "Smart inquiry handling",
         "Appointment management",
-        "Information assistance"
+        "Instant information assistance"
       ]
     }
   ];
