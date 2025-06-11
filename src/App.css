@@ -325,8 +325,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  gap: 5rem;
+  justify-content: flex-start;
+  gap: 10rem;
   margin-bottom: 4rem;
 }
 
@@ -380,6 +380,7 @@ body {
   flex: 0 0 400px;
   max-width: 400px;
   margin-left: auto;
+  padding-left: 5rem;
 }
 
 .footer-contact h3 {
