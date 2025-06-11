@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Thank you for booking a demo with Scheduly AI"
+    />
+    <title>Thank You - Scheduly AI</title>
+    
+    <!-- FirstPromoter Tracking Script -->
+    <script>
+      (function(w){w.fpr=w.fpr||function(){w.fpr.q = w.fpr.q||[];w.fpr.q[arguments[0]=='set'?'unshift':'push'](arguments);};})(window);
+      fpr("init", {cid:"5a8ai6hi"}); 
+      fpr("click");
+    </script>
+    <script src="https://cdn.firstpromoter.com/fpr.js" async></script>
+    <script>
+      function sendReferralToFirstPromoter() {
+        if (window.fpr) {
+          var urlString = decodeURI(window.location.href);
+          var emailFromUrl = new URLSearchParams(urlString).get("invitee_email");
+          if (emailFromUrl) {
+            fpr("referral", { email: emailFromUrl });
+          }
+        }
+      }
+      if (window.attachEvent) {
+        window.attachEvent("onload", sendReferralToFirstPromoter);
+      }
+      else {
+        window.addEventListener("load", sendReferralToFirstPromoter, false);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html> 

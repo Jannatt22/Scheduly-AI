@@ -251,11 +251,11 @@ const TestimonialsSection = () => {
         {testimonials.map((testimonial, index) => (
           <div key={index} className="testimonial-card">
             <div className="testimonial-content">
-              <p className="testimonial-text">{testimonial.text}</p>
               <div className="testimonial-author">
                 <h4>{testimonial.author}</h4>
                 <p>{testimonial.role}</p>
               </div>
+              <p className="testimonial-text">{testimonial.text}</p>
               <div className="star-rating">
                 {"★".repeat(testimonial.rating)}
               </div>
@@ -435,6 +435,20 @@ const ProductDetail = () => {
   );
 };
 
+// Thank You Page Component
+const ThankYouPage = () => {
+  return (
+    <div className="thank-you-page">
+      <div className="thank-you-content">
+        <h1>Thank You for Booking!</h1>
+        <p>We're excited to show you how Scheduly AI can transform your practice.</p>
+        <p>You'll receive a confirmation email shortly with the meeting details.</p>
+        <Link to="/" className="cta-button">Return to Home</Link>
+      </div>
+    </div>
+  );
+};
+
 // Main App Component
 function App() {
   return (
@@ -453,6 +467,7 @@ function App() {
               </>
             } />
             <Route path="/product/:productId" element={<ProductDetail />} />
+            <Route path="/thank-you" element={<ThankYouPage />} />
           </Routes>
         </main>
       </div>
