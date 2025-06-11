@@ -169,8 +169,8 @@ body {
 
 /* Products Section */
 .products-section {
-  padding: 80px 10%;
-  background-color: #f8f9fa;
+  padding: 6rem 4rem;
+  background: var(--white);
 }
 
 .products-section h2 {
@@ -311,13 +311,14 @@ body {
   font-style: normal;
   text-align: center;
   line-height: 1.8;
+  padding-right: 1rem
 }
 
 /* Footer */
 .footer {
   background: var(--bg-dark);
   color: var(--white);
-  padding: 6rem 10% 2rem;
+  padding: 6rem 2rem 2rem;
 }
 
 .footer-content {
@@ -327,7 +328,6 @@ body {
   justify-content: space-between;
   gap: 5rem;
   margin-bottom: 4rem;
-  padding: 0 10%;
 }
 
 .footer-company {
@@ -427,7 +427,7 @@ body {
 .footer-bottom {
   max-width: 1200px;
   margin: 2rem auto 0;
-  padding: 2rem 10% 0;
+  padding-top: 2rem;
   border-top: 1px solid #374151;
   text-align: center;
 }
@@ -490,7 +490,6 @@ body {
   .footer-content {
     flex-direction: column;
     gap: 3rem;
-    padding: 0 10%;
   }
 
   .footer-company, .footer-contact {
@@ -500,8 +499,8 @@ body {
 
 /* Benefits Section */
 .benefits-section {
-  padding: 80px 10%;
-  background-color: #ffffff;
+  padding: 8rem 2rem;
+  background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
 }
 
 .benefits-section h2 {
@@ -552,7 +551,7 @@ body {
 
 /* Testimonials Section */
 .testimonials-section {
-  padding: 80px 10%;
+  padding: 4rem 2rem;
   background-color: #f8f9fa;
   text-align: center;
 }
@@ -594,7 +593,7 @@ body {
 }
 
 .testimonial-text {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #4B5563;
   line-height: 1.6;
   text-align: left;
@@ -608,23 +607,23 @@ body {
 }
 
 .testimonial-author h4 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: var(--text-main);
   margin: 0;
   text-align: left;
 }
 
 .testimonial-author p {
-  font-size: 0.85rem;
   color: #6B7280;
   margin: 0;
   text-align: left;
 }
 
 .star-rating {
-  color: #ffd700;
-  font-size: 1.5rem;
-  margin-top: 1rem;
+  color: #F59E0B;
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  text-align: left;
 }
 
 /* Product Detail Page */
