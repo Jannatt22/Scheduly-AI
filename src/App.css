@@ -311,7 +311,7 @@ body {
   font-style: normal;
   text-align: center;
   line-height: 1.8;
-  padding-left: 5rem
+  padding-left: 8rem;
 }
 
 /* Footer */
@@ -380,7 +380,7 @@ body {
   flex: 0 0 400px;
   max-width: 400px;
   margin-left: auto;
-  padding-left: 5rem;
+  padding-left: 8rem;
 }
 
 .footer-contact h3 {
