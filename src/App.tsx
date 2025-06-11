@@ -144,7 +144,7 @@ const ProductsSection = () => {
     {
       id: "ai-emergency-handler",
       title: "AI Emergency Handler",
-      description: "24/7 emergency call management system that prioritizes urgent cases, provides immediate assistance, and ensures proper emergency response.",
+      description: "Real-time emergency call management system that prioritizes urgent cases, provides immediate assistance, and ensures proper emergency response.",
       icon: "🚨",
       features: [
         "Real-time emergency management",
