@@ -41,7 +41,7 @@ const HeroSection = () => {
         <h1>AI-Powered Scheduling for Modern Teams</h1>
         <p>Streamline your team's scheduling process with our intelligent AI assistant. Save time, reduce conflicts, and boost productivity.</p>
         <div className="hero-buttons">
-          <a href="#demo" className="cta-button">Request Demo</a>
+          <a href="https://calendly.com/siva-effibotic/30min?month=2025-06" target="_blank" rel="noopener noreferrer" className="cta-button">Book a Demo</a>
           <a href="#learn-more" className="secondary-button">Learn More</a>
         </div>
       </div>

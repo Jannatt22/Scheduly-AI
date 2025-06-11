@@ -94,7 +94,7 @@ body {
 /* Hero Section */
 .hero-section {
   background: #F0F9FF;
-  padding: 8rem 0;
+  padding: 8rem 6rem;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -106,7 +106,7 @@ body {
 .hero-content {
   flex: 1;
   max-width: 600px;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 
 .hero-content h1 {
