@@ -37,17 +37,28 @@
       function sendReferralToFirstPromoter() {
         if (window.fpr) {
           var urlString = decodeURI(window.location.href);
-          var emailFromUrl = new URLSearchParams(urlString).get("invitee_email");
-          if (emailFromUrl) {
-            fpr("referral", { email: emailFromUrl });
+          var urlParams = new URLSearchParams(urlString);
+          var fprParam = urlParams.get('fpr');
+          var emailFromUrl = urlParams.get('invitee_email');
+          
+          if (fprParam) {
+            fpr("referral", { 
+              email: emailFromUrl || '',
+              ref: fprParam
+            });
+          } else if (emailFromUrl) {
+            fpr("referral", { 
+              email: emailFromUrl
+            });
           }
         }
       }
-      if (window.attachEvent) {
-        window.attachEvent("onload", sendReferralToFirstPromoter);
-      }
-      else {
-        window.addEventListener("load", sendReferralToFirstPromoter, false);
+      
+      // Ensure the script runs after the page is fully loaded
+      if (document.readyState === 'complete') {
+        sendReferralToFirstPromoter();
+      } else {
+        window.addEventListener('load', sendReferralToFirstPromoter);
       }
     </script>
 
@@ -111,3 +122,4 @@
     -->
   </body>
 </html>
+
