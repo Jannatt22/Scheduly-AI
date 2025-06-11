@@ -326,12 +326,12 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  gap: 8rem;
+  gap: 5rem;
   margin-bottom: 4rem;
 }
 
 .footer-company {
-  flex: 1;
+  flex: 0 0 400px;
   max-width: 400px;
 }
 
@@ -377,8 +377,9 @@ body {
 }
 
 .footer-contact {
-  flex: 1;
+  flex: 0 0 400px;
   max-width: 400px;
+  margin-left: auto;
 }
 
 .footer-contact h3 {
