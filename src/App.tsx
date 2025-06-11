@@ -24,7 +24,7 @@ const Navigation = () => {
         <nav className="nav-links">
           <a href="/">Home</a>
           <a href="#products">Products</a>
-          <a href="#book-demo">Book Demo</a>
+          <a href="https://calendly.com/siva-effibotic/30min?month=2025-06" target="_blank" rel="noopener noreferrer">Book Demo</a>
           <a href="#contact">Contact</a>
         </nav>
         <a href="#login" className="cta-button">Login</a>
