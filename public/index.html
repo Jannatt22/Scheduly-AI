@@ -31,27 +31,25 @@
       (function(w){w.fpr=w.fpr||function(){w.fpr.q = w.fpr.q||[];w.fpr.q[arguments[0]=='set'?'unshift':'push'](arguments);};})(window);
       fpr("init", {cid:"5a8ai6hi"}); 
       fpr("click");
-      
-      // Add referral tracking
-      function trackReferral() {
-        var urlParams = new URLSearchParams(window.location.search);
-        var fprParam = urlParams.get('fpr');
-        if (fprParam) {
-          fpr("referral", { 
-            email: urlParams.get('email') || '',
-            ref: fprParam
-          });
-        }
-      }
-      
-      // Run tracking when page loads
-      if (document.readyState === 'complete') {
-        trackReferral();
-      } else {
-        window.addEventListener('load', trackReferral);
-      }
     </script>
     <script src="https://cdn.firstpromoter.com/fpr.js" async></script>
+    <script>
+      function sendReferralToFirstPromoter() {
+        if (window.fpr) {
+          var urlString = decodeURI(window.location.href);
+          var emailFromUrl = new URLSearchParams(urlString).get("invitee_email");
+          if (emailFromUrl) {
+            fpr("referral", { email: emailFromUrl });
+          }
+        }
+      }
+      if (window.attachEvent) {
+        window.attachEvent("onload", sendReferralToFirstPromoter);
+      }
+      else {
+        window.addEventListener("load", sendReferralToFirstPromoter, false);
+      }
+    </script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
