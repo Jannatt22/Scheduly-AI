@@ -646,10 +646,11 @@ body {
   gap: 2rem;
   margin-bottom: 3rem;
   text-align: center;
+  font-size: 2rem;
 }
 
 .product-detail-icon {
-  font-size: 3rem;
+  font-size: 2rem;
   background: var(--bg-light);
   padding: 1.5rem;
   border-radius: 1rem;
