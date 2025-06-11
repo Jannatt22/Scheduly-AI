@@ -284,7 +284,7 @@ const Footer = () => {
             <span className="backed-by-text">Backed by Y Combinator</span>
           </div>
         </div>
-        <div className="footer-contact">
+        <div id="contact" className="footer-contact">
           <h3>Contact Us</h3>
           <div className="contact-details">
             <div className="contact-group">
