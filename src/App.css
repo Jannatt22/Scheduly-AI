@@ -169,8 +169,8 @@ body {
 
 /* Products Section */
 .products-section {
-  padding: 6rem 4rem;
-  background: var(--white);
+  padding: 80px 10%;
+  background-color: #f8f9fa;
 }
 
 .products-section h2 {
@@ -498,8 +498,8 @@ body {
 
 /* Benefits Section */
 .benefits-section {
-  padding: 8rem 2rem;
-  background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+  padding: 80px 10%;
+  background-color: #ffffff;
 }
 
 .benefits-section h2 {
@@ -550,7 +550,7 @@ body {
 
 /* Testimonials Section */
 .testimonials-section {
-  padding: 4rem 2rem;
+  padding: 80px 10%;
   background-color: #f8f9fa;
   text-align: center;
 }
@@ -620,10 +620,9 @@ body {
 }
 
 .star-rating {
-  color: #F59E0B;
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  text-align: left;
+  color: #ffd700;
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 /* Product Detail Page */
