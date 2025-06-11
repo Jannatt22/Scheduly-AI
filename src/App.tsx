@@ -281,7 +281,7 @@ const Footer = () => {
           </p>
           <div className="backed-by-section">
             <img src="/BHiveLogo.png" alt="Backed by" className="backed-by-image" />
-            <span className="backed-by-text">Backed by Y Combinator</span>
+            <span className="backed-by-text">Backed by BHIVE</span>
           </div>
         </div>
         <div id="contact" className="footer-contact">
