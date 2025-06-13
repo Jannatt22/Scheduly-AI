@@ -1,12 +1,13 @@
 :root {
-  --primary: #6366F1;
-  --accent: #8B5CF6;
-  --bg-light: #F3F4F6;
+  --primary: #10B981;
+  --accent: #2563EB;
+  --bg-light: #F9FAFB;
   --bg-dark: #111827;
   --white: #FFFFFF;
-  --text-main: #111827;
-  --secondary: #E0E7FF;
-  --highlight: #F472B6;
+  --text-main: #1F2937;
+  --secondary: #D1FAE5;
+  --highlight: #F59E0B;
+  --star-rating: #FBBF24;
 }
 
 * {
@@ -895,7 +896,7 @@ body {
 }
 
 .star-rating {
-  color: var(--highlight);
+  color: var(--star-rating);
   font-size: 1.5rem;
   margin-top: 0.5rem;
   text-align: left;
