@@ -130,6 +130,26 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  .footer-company {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo {
+    height: 60px;
+    margin: 0 auto 1.5rem;
+    display: block;
+  }
+  .company-description {
+    text-align: center;
+    margin: 0 auto 2rem;
+  }
 }
 
 /* Hero Section */
@@ -554,17 +574,22 @@ body {
     gap: 3rem;
   }
 
-  .footer-company,
-  .footer-contact {
+  .footer-company {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-logo {
-    height: 80px;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    height: 60px;
+    margin: 0 auto 1.5rem;
     display: block;
+  }
+
+  .company-description {
+    text-align: center;
+    margin: 0 auto 2rem;
   }
 
   .footer-contact {
@@ -701,39 +726,11 @@ body {
     gap: 2rem;
   }
 
-  .footer-company,
-  .footer-contact {
-    flex: 0 0 100%;
+  .footer-company {
     max-width: 100%;
-    padding-left: 0;
-  }
-
-  .contact-address {
-    padding-left: 0;
-  }
-
-  .product-detail {
-    padding: 4rem 1rem;
-  }
-
-  .product-detail h1 {
-    font-size: 2rem;
-  }
-
-  .product-detail-description {
-    font-size: 1rem;
-  }
-
-  .product-detail-features {
-    padding: 1.5rem;
-  }
-
-  .product-detail-features h2 {
-    font-size: 1.5rem;
-  }
-
-  .product-detail-features li {
-    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-logo {
@@ -741,10 +738,10 @@ body {
     margin: 0 auto 1rem;
     display: block;
   }
+
   .company-description {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 2rem;
   }
 
   .backed-by-section {
@@ -1154,17 +1151,22 @@ body {
     gap: 3rem;
   }
 
-  .footer-company,
-  .footer-contact {
+  .footer-company {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-logo {
-    height: 80px;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    height: 60px;
+    margin: 0 auto 1.5rem;
     display: block;
+  }
+
+  .company-description {
+    text-align: center;
+    margin: 0 auto 2rem;
   }
 
   .footer-contact {
@@ -1301,39 +1303,11 @@ body {
     gap: 2rem;
   }
 
-  .footer-company,
-  .footer-contact {
-    flex: 0 0 100%;
+  .footer-company {
     max-width: 100%;
-    padding-left: 0;
-  }
-
-  .contact-address {
-    padding-left: 0;
-  }
-
-  .product-detail {
-    padding: 4rem 1rem;
-  }
-
-  .product-detail h1 {
-    font-size: 2rem;
-  }
-
-  .product-detail-description {
-    font-size: 1rem;
-  }
-
-  .product-detail-features {
-    padding: 1.5rem;
-  }
-
-  .product-detail-features h2 {
-    font-size: 1.5rem;
-  }
-
-  .product-detail-features li {
-    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer-logo {
@@ -1341,10 +1315,10 @@ body {
     margin: 0 auto 1rem;
     display: block;
   }
+
   .company-description {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 2rem;
   }
 
   .backed-by-section {
