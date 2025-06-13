@@ -373,7 +373,7 @@ body {
   }
 
   .feature-image {
-    max-width: 235px;
+    max-width: 230px;
     width: 100%;
     margin: 0 auto;
     transform: translateX(20px);
