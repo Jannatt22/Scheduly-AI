@@ -218,6 +218,7 @@ body {
     align-items: center;
     margin: 0 auto;
     padding: 0;
+    padding-left: 10px;
   }
 
   .feature-image {
