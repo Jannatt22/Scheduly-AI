@@ -105,6 +105,7 @@ body {
   font-weight: 500;
   padding: 0.4rem 1rem;
   font-size: 0.95rem;
+  z-index: 999;
 }
 
 @media (max-width: 768px) {
@@ -113,14 +114,50 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    z-index: 1000;
   }
+  
   .cta-button.mobile {
     margin-right: 1rem;
     order: 2;
+    position: relative;
+    z-index: 999;
   }
+  
   .hamburger-menu {
     order: 3;
+    position: relative;
+    z-index: 1001;
   }
+
+  .mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background: var(--white);
+    padding: 80px 2rem 2rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .mobile-nav.active {
+    right: 0;
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
   .footer-logo {
     height: 60px;
     margin: 0 auto 1.5rem;
