@@ -134,21 +134,31 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    text-align: center;
   }
   .footer-company {
     max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .footer-logo {
     height: 60px;
+    width: auto;
     margin: 0 auto 1.5rem;
     display: block;
+  }
+  .footer-logo .logo-image {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
   }
   .company-description {
     text-align: center;
     margin: 0 auto 2rem;
+    width: 100%;
   }
 }
 
@@ -572,24 +582,35 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    text-align: center;
   }
 
   .footer-company {
     max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .footer-logo {
     height: 60px;
+    width: auto;
     margin: 0 auto 1.5rem;
     display: block;
+  }
+
+  .footer-logo .logo-image {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
   }
 
   .company-description {
     text-align: center;
     margin: 0 auto 2rem;
+    width: 100%;
   }
 
   .footer-contact {
@@ -728,20 +749,30 @@ body {
 
   .footer-company {
     max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .footer-logo {
     height: 50px;
+    width: auto;
     margin: 0 auto 1rem;
     display: block;
+  }
+
+  .footer-logo .logo-image {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
   }
 
   .company-description {
     text-align: center;
     margin: 0 auto 2rem;
+    width: 100%;
   }
 
   .backed-by-section {
@@ -1149,24 +1180,35 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
+    text-align: center;
   }
 
   .footer-company {
     max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .footer-logo {
     height: 60px;
+    width: auto;
     margin: 0 auto 1.5rem;
     display: block;
+  }
+
+  .footer-logo .logo-image {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
   }
 
   .company-description {
     text-align: center;
     margin: 0 auto 2rem;
+    width: 100%;
   }
 
   .footer-contact {
@@ -1305,20 +1347,30 @@ body {
 
   .footer-company {
     max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .footer-logo {
     height: 50px;
+    width: auto;
     margin: 0 auto 1rem;
     display: block;
+  }
+
+  .footer-logo .logo-image {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
   }
 
   .company-description {
     text-align: center;
     margin: 0 auto 2rem;
+    width: 100%;
   }
 
   .backed-by-section {
