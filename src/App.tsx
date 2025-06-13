@@ -324,26 +324,23 @@ const Footer = () => {
             <div className="contact-group">
               <span className="contact-icon">📧</span>
               <div className="contact-info">
-                <a href="mailto:sales@scheduly.ai">sales@scheduly.ai</a>
-                <a href="mailto:support@scheduly.ai">support@scheduly.ai</a>
+                <a href="mailto:siva@effibotic.com">siva@effibotic.com</a>
+                <a href="mailto:rupendra@effibotic.com">rupendra@effibotic.com</a>
               </div>
             </div>
             <div className="contact-group">
               <span className="contact-icon">📞</span>
               <div className="contact-info">
-                <a href="tel:+1-555-0123">+1 (555) 0123</a>
-                <a href="tel:+1-555-0124">+1 (555) 0124</a>
+                <a href="tel:+16477242624">+1 (647) 724-2624</a>
+                <a href="tel:+12899860990">+1 (289) 986-0990</a>
               </div>
             </div>
             <div className="contact-group">
               <span className="contact-icon">📍</span>
               <div className="contact-info">
                 <address>
-                  <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">
-                    123 AI Street<br />
-                    San Francisco, CA 94105<br />
-                    United States
-                  </a>
+                  8 Nelson St W,<br />
+                  Brampton, ON L6X 1B7
                 </address>
               </div>
             </div>
