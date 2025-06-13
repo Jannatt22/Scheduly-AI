@@ -371,6 +371,7 @@ body {
   margin-bottom: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+  display: block;
 }
 
 .footer-logo .logo-image {
@@ -394,12 +395,16 @@ body {
   border-radius: 8px;
   margin-bottom: 2rem;
   width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .backed-by-image {
   height: 25px;
   width: auto;
   object-fit: contain;
+  display: inline-block;
 }
 
 .backed-by-text {
@@ -656,6 +661,29 @@ body {
 
   .product-detail-features li {
     font-size: 0.9rem;
+  }
+
+  .footer-logo {
+    height: 80px;
+    margin-bottom: 2rem;
+  }
+
+  .backed-by-section {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+  }
+
+  .backed-by-image {
+    height: 32px;
+    width: auto;
+    margin: 0 0.5rem 0 0;
+    display: inline-block;
   }
 }
 
