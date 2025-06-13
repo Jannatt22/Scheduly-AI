@@ -116,6 +116,18 @@ body {
   .hamburger-menu {
     order: 3;
   }
+  .footer-logo {
+    height: 60px;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .company-description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Hero Section */
@@ -511,7 +523,17 @@ body {
   }
 
   .footer-logo {
-    height: 45px;
+    height: 60px;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .company-description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .products-section {
@@ -715,8 +737,16 @@ body {
   }
 
   .footer-logo {
-    height: 80px;
-    margin-bottom: 2rem;
+    height: 50px;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .company-description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .backed-by-section {
@@ -1094,7 +1124,17 @@ body {
   }
 
   .footer-logo {
-    height: 45px;
+    height: 60px;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .company-description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .products-section {
@@ -1295,5 +1335,36 @@ body {
 
   .product-detail-features li {
     font-size: 0.9rem;
+  }
+
+  .footer-logo {
+    height: 50px;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .company-description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .backed-by-section {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    text-align: center;
+  }
+
+  .backed-by-image {
+    height: 32px;
+    width: auto;
+    margin: 0 0.5rem 0 0;
+    display: inline-block;
   }
 }
