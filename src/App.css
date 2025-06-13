@@ -1,12 +1,12 @@
 :root {
-  --primary: #B8A1D1;
-  --accent: #C2A2A1;
-  --bg-light: #F5F5F5;
-  --bg-dark: #9E5A6E;
+  --primary: #3B82F6;
+  --accent: #2563EB;
+  --bg-light: #F9FAFB;
+  --bg-dark: #1F2937;
   --white: #FFFFFF;
-  --text-main: #D8C9C1;
-  --secondary: #E1D2F1;
-  --highlight: #9E5A6E;
+  --text-main: #1F2937;
+  --secondary: #E5E7EB;
+  --highlight: #F59E0B;
   --star-rating: #FBBF24;
 }
 
@@ -77,7 +77,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: var(--accent);
+  color: var(--primary);
 }
 
 .cta-button {
@@ -94,14 +94,13 @@ body {
 }
 
 .cta-button:hover {
-  background: var(--secondary);
-  color: var(--bg-dark);
+  background: var(--accent);
 }
 
 /* Mobile Login Button Style */
 .cta-button.mobile {
   background: var(--bg-light);
-  color: var(--bg-dark);
+  color: var(--primary);
   border: 2px solid var(--primary);
   font-weight: 500;
   padding: 0.4rem 1rem;
@@ -484,7 +483,7 @@ body {
   font-size: 1.25rem;
   line-height: 1.5;
   min-width: 24px;
-  color: var(--accent);
+  color: var(--primary);
   margin-top: 0.25rem;
 }
 
@@ -837,7 +836,7 @@ body {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   display: inline-block;
-  color: var(--accent);
+  color: var(--primary);
 }
 
 .benefit-card h3 {
@@ -1010,7 +1009,7 @@ body {
 
 .product-detail-features li::before {
   content: "✓";
-  color: var(--accent);
+  color: var(--primary);
   font-weight: bold;
 }
 
