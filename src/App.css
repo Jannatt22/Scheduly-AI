@@ -198,6 +198,13 @@ body {
     margin: 0 auto 2rem;
     width: 100%;
   }
+  .hero-image {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 
 /* Hero Section */
@@ -591,6 +598,10 @@ body {
 
   .hero-image {
     max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 
   .feature-image {
@@ -839,6 +850,14 @@ body {
     width: auto;
     margin: 0 0.5rem 0 0;
     display: inline-block;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 }
 
@@ -1189,6 +1208,10 @@ body {
 
   .hero-image {
     max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 
   .feature-image {
@@ -1437,5 +1460,13 @@ body {
     width: auto;
     margin: 0 0.5rem 0 0;
     display: inline-block;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
   }
 }
