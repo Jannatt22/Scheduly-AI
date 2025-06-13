@@ -212,13 +212,12 @@ body {
   }
 
   .hero-image {
-    max-width: 100%;
+    max-width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding: 0;
-    padding-left: 10px;
   }
 
   .feature-image {
