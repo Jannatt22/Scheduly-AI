@@ -417,18 +417,21 @@ body {
   margin-bottom: 2rem;
   color: var(--white);
   font-weight: 600;
+  text-align: left;
 }
 
 .contact-details {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  align-items: flex-start;
 }
 
 .contact-group {
   display: flex;
   align-items: flex-start;
   gap: 1.25rem;
+  width: 100%;
 }
 
 .contact-icon {
@@ -443,6 +446,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  text-align: left;
 }
 
 .contact-info a,
