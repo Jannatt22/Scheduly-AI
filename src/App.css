@@ -43,6 +43,7 @@ body {
   height: 60px;
   display: flex;
   align-items: center;
+  padding-left: 1rem;
 }
 
 .logo a {
@@ -93,10 +94,12 @@ body {
 
 /* Mobile Login Button Style */
 .cta-button.mobile {
-  background: rgba(59, 130, 246, 0.08); /* very low opacity blue */
+  background: rgba(59, 130, 246, 0.08);
   color: var(--primary);
   border: 2px solid var(--primary);
   font-weight: 500;
+  padding: 0.4rem 1rem;
+  font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {
@@ -313,6 +316,7 @@ body {
   gap: 2rem;
   max-width: 500px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .contact-emails, .contact-phones {
@@ -343,26 +347,30 @@ body {
   background: var(--bg-dark);
   color: var(--white);
   padding: 6rem 10% 2rem;
+  text-align: center;
 }
 
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-start;
-  gap: 10rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
   margin-bottom: 4rem;
 }
 
 .footer-company {
-  flex: 0 0 400px;
   max-width: 400px;
+  width: 100%;
 }
 
 .footer-logo {
   height: 60px;
   width: auto;
   margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-logo .logo-image {
@@ -401,28 +409,31 @@ body {
 }
 
 .footer-contact {
-  flex: 0 0 400px;
   max-width: 400px;
-  margin-left: auto;
-  padding-left: 8rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0;
 }
 
 .footer-contact h3 {
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
   color: var(--white);
+  text-align: center;
 }
 
 .contact-details {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .contact-group {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
+  justify-content: center;
 }
 
 .contact-icon {
@@ -435,6 +446,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  align-items: center;
 }
 
 .contact-info a,
@@ -444,6 +456,7 @@ body {
   transition: color 0.3s ease;
   font-style: normal;
   line-height: 1.5;
+  text-align: center;
 }
 
 .contact-info a:hover {
