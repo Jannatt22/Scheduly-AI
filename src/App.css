@@ -1,12 +1,12 @@
 :root {
-  --primary: #9B1B30;
-  --accent: #9B76D1;
-  --bg-light: #FFFFFF;
-  --bg-dark: #5E1D4D;
+  --primary: #B8A1D1;
+  --accent: #C2A2A1;
+  --bg-light: #F5F5F5;
+  --bg-dark: #9E5A6E;
   --white: #FFFFFF;
-  --text-main: #5E1D4D;
-  --secondary: #D1D1D1;
-  --highlight: #D86B74;
+  --text-main: #D8C9C1;
+  --secondary: #E1D2F1;
+  --highlight: #9E5A6E;
   --star-rating: #FBBF24;
 }
 
@@ -21,6 +21,7 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.6;
   color: var(--text-main);
+  background-color: var(--bg-light);
 }
 
 /* Navigation Header */
@@ -93,13 +94,14 @@ body {
 }
 
 .cta-button:hover {
-  background: var(--accent);
+  background: var(--secondary);
+  color: var(--bg-dark);
 }
 
 /* Mobile Login Button Style */
 .cta-button.mobile {
-  background: var(--secondary);
-  color: var(--primary);
+  background: var(--bg-light);
+  color: var(--bg-dark);
   border: 2px solid var(--primary);
   font-weight: 500;
   padding: 0.4rem 1rem;
@@ -164,7 +166,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-  background: #F0F9FF;
+  background: var(--white);
   padding: 8rem 6rem;
   display: flex;
   align-items: flex-start;
@@ -241,7 +243,7 @@ body {
 /* Products Section */
 .products-section {
   padding: 6rem 10%;
-  background: var(--white);
+  background: var(--bg-light);
 }
 
 .products-section h2 {
@@ -797,7 +799,7 @@ body {
 /* Benefits Section */
 .benefits-section {
   padding: 8rem 10%;
-  background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+  background: linear-gradient(135deg, var(--white) 0%, var(--bg-light) 100%);
 }
 
 .benefits-section h2 {
@@ -852,7 +854,7 @@ body {
 /* Testimonials Section */
 .testimonials-section {
   padding: 4rem 10%;
-  background-color: #f8f9fa;
+  background-color: var(--white);
   text-align: center;
 }
 
