@@ -1,9 +1,12 @@
 :root {
-  --primary: #3B82F6;
-  --text-main: #1F2937;
-  --bg-light: #F9FAFB;
+  --primary: #6366F1;
+  --accent: #8B5CF6;
+  --bg-light: #F3F4F6;
   --bg-dark: #111827;
   --white: #FFFFFF;
+  --text-main: #111827;
+  --secondary: #E0E7FF;
+  --highlight: #F472B6;
 }
 
 * {
@@ -89,12 +92,12 @@ body {
 }
 
 .cta-button:hover {
-  background: #2563EB;
+  background: var(--accent);
 }
 
 /* Mobile Login Button Style */
 .cta-button.mobile {
-  background: rgba(59, 130, 246, 0.08);
+  background: var(--secondary);
   color: var(--primary);
   border: 2px solid var(--primary);
   font-weight: 500;
@@ -892,7 +895,7 @@ body {
 }
 
 .star-rating {
-  color: #F59E0B;
+  color: var(--highlight);
   font-size: 1.5rem;
   margin-top: 0.5rem;
   text-align: left;
