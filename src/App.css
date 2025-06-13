@@ -1,13 +1,13 @@
 :root {
-  --primary: #10B981;
-  --accent: #2563EB;
-  --bg-light: #F9FAFB;
-  --bg-dark: #111827;
+  --primary: #5A92D2;
+  --accent: #6C9E89;
+  --bg-light: #FFFFFF;
+  --bg-dark: #333333;
   --white: #FFFFFF;
-  --text-main: #1F2937;
-  --secondary: #D1FAE5;
-  --highlight: #F59E0B;
-  --star-rating: #FBBF24;
+  --text-main: #333333;
+  --secondary: #E0E0E0;
+  --highlight: #B8A1D1;
+  --star-rating: #C0C0C0;
 }
 
 * {
@@ -76,7 +76,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: var(--primary);
+  color: var(--accent);
 }
 
 .cta-button {
@@ -452,7 +452,7 @@ body {
   font-size: 1.25rem;
   line-height: 1.5;
   min-width: 24px;
-  color: var(--primary);
+  color: var(--accent);
   margin-top: 0.25rem;
 }
 
@@ -795,16 +795,19 @@ body {
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
+  border: 1px solid var(--secondary);
 }
 
 .benefit-card:hover {
   transform: translateY(-5px);
+  border-color: var(--primary);
 }
 
 .benefit-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   display: inline-block;
+  color: var(--accent);
 }
 
 .benefit-card h3 {
@@ -977,7 +980,7 @@ body {
 
 .product-detail-features li::before {
   content: "✓";
-  color: var(--primary);
+  color: var(--accent);
   font-weight: bold;
 }
 
