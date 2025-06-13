@@ -19,6 +19,9 @@ const Navigation = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // Detect mobile
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
+
   return (
     <header className="nav-header">
       <div className="nav-container">
@@ -33,15 +36,22 @@ const Navigation = () => {
           <a href="https://calendly.com/siva-effibotic/30min?month=2025-06" target="_blank" rel="noopener noreferrer">Book Demo</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a href="#login" className="cta-button">Login</a>
-        
-        {/* Hamburger Menu */}
-        <div className={`hamburger-menu ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
+        {/* Show login button and hamburger in a flex row on mobile */}
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <a
+            href="#login"
+            className={`cta-button${isMobile ? ' mobile' : ''}`}
+            style={isMobile ? { marginRight: '1rem' } : {}}
+          >
+            Login
+          </a>
+          {/* Hamburger Menu */}
+          <div className={`hamburger-menu ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-
         {/* Mobile Navigation */}
         <div className={`mobile-nav ${isMenuOpen ? 'active' : ''}`}>
           <nav className="mobile-nav-links">

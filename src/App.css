@@ -91,6 +91,30 @@ body {
   background: #2563EB;
 }
 
+/* Mobile Login Button Style */
+.cta-button.mobile {
+  background: rgba(59, 130, 246, 0.08); /* very low opacity blue */
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .cta-button.mobile {
+    margin-right: 1rem;
+    order: 2;
+  }
+  .hamburger-menu {
+    order: 3;
+  }
+}
+
 /* Hero Section */
 .hero-section {
   background: #F0F9FF;
