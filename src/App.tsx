@@ -13,6 +13,12 @@ interface ProductCardProps {
 
 // Navigation Component
 const Navigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="nav-header">
       <div className="nav-container">
@@ -28,6 +34,24 @@ const Navigation = () => {
           <a href="#contact">Contact</a>
         </nav>
         <a href="#login" className="cta-button">Login</a>
+        
+        {/* Hamburger Menu */}
+        <div className={`hamburger-menu ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        {/* Mobile Navigation */}
+        <div className={`mobile-nav ${isMenuOpen ? 'active' : ''}`}>
+          <nav className="mobile-nav-links">
+            <a href="/" onClick={toggleMenu}>Home</a>
+            <a href="#products" onClick={toggleMenu}>Products</a>
+            <a href="https://calendly.com/siva-effibotic/30min?month=2025-06" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>Book Demo</a>
+            <a href="#contact" onClick={toggleMenu}>Contact</a>
+            <a href="#login" onClick={toggleMenu}>Login</a>
+          </nav>
+        </div>
       </div>
     </header>
   );
